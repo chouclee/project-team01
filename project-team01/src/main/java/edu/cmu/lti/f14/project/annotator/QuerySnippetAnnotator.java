@@ -152,11 +152,6 @@ public class QuerySnippetAnnotator extends JCasAnnotator_ImplBase {
         
         passage.addToIndexes();
         
-        
-        
-        
-        
-        
       }catch(IOException e){
         e.printStackTrace();
       }

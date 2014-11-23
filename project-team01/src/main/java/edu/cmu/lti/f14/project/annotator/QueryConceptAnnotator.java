@@ -70,10 +70,10 @@ public class QueryConceptAnnotator extends JCasAnnotator_ImplBase  {
       String queryText = arraylist.get(0).getText();
       
       // 
-      //OntologyServiceResponse.Result uniprotResult = null;
+//      OntologyServiceResponse.Result uniprotResult = null;
       List<Finding> result = null;
       try {
-        //uniprotResult = goService.findUniprotEntitiesPaged(queryText, 0);
+//        uniprotResult = goService.findUniprotEntitiesPaged(queryText, 0);
         result = ConcpetWebService.getConceptWebService(goService, queryText);
       } catch (IOException e) {
         // TODO Auto-generated catch block
@@ -85,7 +85,7 @@ public class QueryConceptAnnotator extends JCasAnnotator_ImplBase  {
       // store the concept name
       String conceptLabel = "";
       // System.out.println("Disease ontology: " + diseaseOntologyResult.getFindings().size());
-      //for (OntologyServiceResponse.Finding finding : uniprotResult.getFindings()) {
+//      for (OntologyServiceResponse.Finding finding : uniprotResult.getFindings()) {
       for (OntologyServiceResponse.Finding finding : result) {
         conceptLabel = finding.getConcept().getLabel();
         Concept concept = new Concept(aJCas);
