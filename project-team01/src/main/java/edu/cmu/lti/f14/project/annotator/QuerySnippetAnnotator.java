@@ -105,7 +105,7 @@ public class QuerySnippetAnnotator extends JCasAnnotator_ImplBase {
         
         String stopArticle = article.replace("!", ".").replace("?", ".");
           
-        String [] sentence = stopArticle.split(".");
+        String [] sentence = stopArticle.split("\\.");
         
         Map<Integer, Map<String, Integer>> vec = new HashMap<Integer, Map<String, Integer>>();
         
@@ -126,7 +126,7 @@ public class QuerySnippetAnnotator extends JCasAnnotator_ImplBase {
           Map<String, Integer> docVector = new HashMap<String, Integer>();
           // store the vector
           for(String str : words){
-            if(docVector.get(str) != 0){
+            if(docVector.get(str) != null){
               docVector.put(str, docVector.get(str) + 1);
             }
             else{
