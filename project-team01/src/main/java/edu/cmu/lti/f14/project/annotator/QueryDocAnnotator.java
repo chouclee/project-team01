@@ -86,9 +86,9 @@ public class QueryDocAnnotator extends JCasAnnotator_ImplBase {
           // Title
           String title = doc.getTitle();
           
-          // 
+          String abs = doc.getDocumentAbstract();
           // new a document 
-          Document document = TypeFactory.createDocument(aJCas, uri, 0.0, "", rank, queryText, "", 
+          Document document = TypeFactory.createDocument(aJCas, uri, 0.0, abs, rank, queryText, "", 
                   new ArrayList<CandidateAnswerVariant>(), title, docID);
           
           

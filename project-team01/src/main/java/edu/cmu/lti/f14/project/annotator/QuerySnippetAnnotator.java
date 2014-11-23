@@ -57,10 +57,10 @@ public class QuerySnippetAnnotator extends JCasAnnotator_ImplBase {
     List<String> pmids = documents.stream().map(Document::getDocId).filter(Objects::nonNull).collect(toList());
      
     for(Document doc : documents){
-//      String pmid = doc.getDocId();
+      String pmid = doc.getDocId();
 //      // full url   
-//      String url = URL_PRE + pmid;
-      String url = doc.getUri();
+      String url = URL_PRE + pmid;
+     // String url = doc.getUri();
       
       // store query sentence
       String query = doc.getQueryString();
@@ -71,7 +71,7 @@ public class QuerySnippetAnnotator extends JCasAnnotator_ImplBase {
       Map<String, Integer> queryVector = new HashMap<String, Integer>();
       // store
       for(String str : queryArray){
-        if(queryVector.get(str) != 0){
+        if(queryVector.get(str) != null){
           queryVector.put(str, queryVector.get(str) + 1);
         }
         else{
@@ -85,19 +85,19 @@ public class QuerySnippetAnnotator extends JCasAnnotator_ImplBase {
       
       // get httpget
       HttpGet httpGet = new HttpGet(url);
-      
+      String article = "";
       try(CloseableHttpResponse response = http.execute(httpGet)){
         HttpEntity entity = response.getEntity();
-        BufferedReader br = new BufferedReader(new InputStreamReader(entity.getContent())); 
-        String line = "";
-
-        
-        // store the while article
-        String article = "";
-        
-        // read the whole article from url
-        while((line = br.readLine()) != null){
-          article += line;
+        if (entity != null) {
+          BufferedReader br = new BufferedReader(new InputStreamReader(entity.getContent())); 
+          String line = "";
+          
+          // read the whole article from url
+          while((line = br.readLine()) != null){
+            article += line;
+          }
+        } else {
+          article = doc.getText();
         }
         
         // split the whole article into each sentence
