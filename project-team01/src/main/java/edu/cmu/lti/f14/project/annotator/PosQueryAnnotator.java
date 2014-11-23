@@ -43,19 +43,19 @@ public class PosQueryAnnotator extends JCasAnnotator_ImplBase {
 			// Get the question first
 			Question question = (Question) iter.next();
 			String queString = question.getText();
-
 			TreeMap<Integer, Integer> begin2end = (TreeMap<Integer, Integer>) mRecognizer
 					.getGeneSpans(queString);
+			 AtomicQueryConcept ato = new AtomicQueryConcept(aJCas);
+			 String ret="";
 			for (Map.Entry<Integer, Integer> entry : begin2end.entrySet()) {
 				// Create an atomic query first
-				AtomicQueryConcept atomicQuery = new AtomicQueryConcept(aJCas);
-				String text = queString.substring(entry.getKey(),
-						entry.getValue());
-				System.err.println("text:" + text);
-				atomicQuery.setText(queString.substring(entry.getKey(),
-						entry.getValue()));
-				atomicQuery.addToIndexes();
+			        String text=queString.substring(entry.getKey(), entry.getValue());
+			       
+			        ret=ret+text+" ";
 			}
+			ato.setText(ret.substring(0, ret.length()-1));
+			System.err.println("text:"+ret.substring(0, ret.length()-1));
+	        ato.addToIndexes();
 		}
 	}
 
