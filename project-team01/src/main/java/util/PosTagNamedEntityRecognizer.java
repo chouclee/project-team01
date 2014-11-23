@@ -8,6 +8,7 @@ import java.util.TreeMap;
 
 import org.apache.uima.resource.ResourceInitializationException;
 
+import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
@@ -22,6 +23,7 @@ public class PosTagNamedEntityRecognizer {
 
   public PosTagNamedEntityRecognizer() throws ResourceInitializationException {
     Properties props = new Properties();
+//    props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
     props.put("annotators", "tokenize, ssplit, pos");
     pipeline = new StanfordCoreNLP(props);
   }
@@ -35,6 +37,8 @@ public class PosTagNamedEntityRecognizer {
       List<CoreLabel> candidate = new ArrayList<CoreLabel>();
       for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
         String pos = token.get(PartOfSpeechAnnotation.class);
+//        String ne = token.get(NamedEntityTagAnnotation.class);     
+//        String syn = token.get(NamedEntityTagAnnotation.class);     
         System.err.println(pos+","+token);
         if (pos.startsWith("NN")) {
           candidate.add(token);

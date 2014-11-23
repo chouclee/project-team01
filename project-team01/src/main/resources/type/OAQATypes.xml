@@ -479,6 +479,14 @@
           <string>QUOTEDPHRASE</string>
           <description/>
         </value>
+      <value>
+          <string>AND</string>
+          <description/>
+        </value>
+        <value>
+          <string>OR</string>
+          <description/>
+        </value>
       </allowedValues>
     </typeDescription>
     <typeDescription>

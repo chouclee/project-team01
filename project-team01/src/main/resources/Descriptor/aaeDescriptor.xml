@@ -12,14 +12,14 @@
     <delegateAnalysisEngine key="tripleDescriptor">
       <import name="Descriptor.tripleDescriptor"/>
     </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="nlpQueryDescriptor">
-      <import name="Descriptor.nlpQueryDescriptor"/>
-    </delegateAnalysisEngine>
-  <delegateAnalysisEngine key="snippedDescriptor">
+    <delegateAnalysisEngine key="snippedDescriptor">
       <import name="Descriptor.snippedDescriptor"/>
     </delegateAnalysisEngine>
   <delegateAnalysisEngine key="posQueryDescriptor">
       <import name="Descriptor.posQueryDescriptor"/>
+    </delegateAnalysisEngine>
+  <delegateAnalysisEngine key="queryCombDescriptor">
+      <import name="Descriptor.queryCombDescriptor"/>
     </delegateAnalysisEngine>
   </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
@@ -32,7 +32,7 @@
     <flowConstraints>
       <fixedFlow>
         <node>posQueryDescriptor</node>
-        <node>nlpQueryDescriptor</node>
+        <node>queryCombDescriptor</node>
         <node>documentDescriptor</node>
         <node>conceptDescriptor</node>
       <node>tripleDescriptor</node>

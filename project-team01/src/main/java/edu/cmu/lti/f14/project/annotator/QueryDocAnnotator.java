@@ -60,6 +60,7 @@ public class QueryDocAnnotator extends JCasAnnotator_ImplBase {
       
       // content in the query of each AtomicQuery
       String queryText = arraylist.get(0).getText();
+    System.err.println("**"+arraylist.get(0).getText());
     
       // This one can return document type answer
       PubMedSearchServiceResponse.Result pubmedResult = null;
