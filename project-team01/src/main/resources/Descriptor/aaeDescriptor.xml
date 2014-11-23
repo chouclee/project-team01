@@ -18,6 +18,9 @@
   <delegateAnalysisEngine key="snippedDescriptor">
       <import name="Descriptor.snippedDescriptor"/>
     </delegateAnalysisEngine>
+  <delegateAnalysisEngine key="posQueryDescriptor">
+      <import name="Descriptor.posQueryDescriptor"/>
+    </delegateAnalysisEngine>
   </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
     <name>aaeDescriptor</name>
@@ -28,10 +31,11 @@
     <configurationParameterSettings/>
     <flowConstraints>
       <fixedFlow>
+        <node>posQueryDescriptor</node>
         <node>nlpQueryDescriptor</node>
         <node>documentDescriptor</node>
         <node>conceptDescriptor</node>
-        <node>tripleDescriptor</node>
+      <node>tripleDescriptor</node>
       <node>snippedDescriptor</node>
       </fixedFlow>
     </flowConstraints>
