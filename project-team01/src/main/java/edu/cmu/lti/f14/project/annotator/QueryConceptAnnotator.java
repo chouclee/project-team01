@@ -17,6 +17,10 @@ import org.apache.uima.jcas.tcas.Annotation;
 import org.apache.uima.resource.ResourceInitializationException;
 
 import util.Utils;
+import util.ConcpetWebService;
+import edu.cmu.lti.oaqa.bio.bioasq.services.OntologyServiceResponse.*;
+import java.util.List;
+
 import edu.cmu.lti.oaqa.bio.bioasq.services.GoPubMedService;
 import edu.cmu.lti.oaqa.bio.bioasq.services.OntologyServiceResponse;
 import edu.cmu.lti.oaqa.type.kb.Concept;
@@ -57,7 +61,7 @@ public class QueryConceptAnnotator extends JCasAnnotator_ImplBase  {
     // TODO Auto-generated method stub
     FSIterator<TOP> iter = aJCas.getJFSIndexRepository().getAllIndexedFS(ComplexQueryConcept.type);
     while(iter.hasNext()){
-      String result = "";
+      //String result = "";
       ComplexQueryConcept cqc = (ComplexQueryConcept) iter.next();
       FSList fslist = cqc.getOperatorArgs();
       ArrayList<AtomicQueryConcept> arraylist = Utils.fromFSListToCollection(fslist, AtomicQueryConcept.class);
@@ -66,9 +70,11 @@ public class QueryConceptAnnotator extends JCasAnnotator_ImplBase  {
       String queryText = arraylist.get(0).getText();
       
       // 
-      OntologyServiceResponse.Result uniprotResult = null;
+      //OntologyServiceResponse.Result uniprotResult = null;
+      List<Finding> result = null;
       try {
-        uniprotResult = goService.findUniprotEntitiesPaged(queryText, 0);
+        //uniprotResult = goService.findUniprotEntitiesPaged(queryText, 0);
+        result = ConcpetWebService.getConceptWebService(goService, queryText);
       } catch (IOException e) {
         // TODO Auto-generated catch block
         e.printStackTrace();
@@ -79,7 +85,8 @@ public class QueryConceptAnnotator extends JCasAnnotator_ImplBase  {
       // store the concept name
       String conceptLabel = "";
       // System.out.println("Disease ontology: " + diseaseOntologyResult.getFindings().size());
-      for (OntologyServiceResponse.Finding finding : uniprotResult.getFindings()) {
+      //for (OntologyServiceResponse.Finding finding : uniprotResult.getFindings()) {
+      for (OntologyServiceResponse.Finding finding : result) {
         conceptLabel = finding.getConcept().getLabel();
         Concept concept = new Concept(aJCas);
         concept.setName(conceptLabel);
