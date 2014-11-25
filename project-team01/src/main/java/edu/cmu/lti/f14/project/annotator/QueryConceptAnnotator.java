@@ -72,14 +72,8 @@ public class QueryConceptAnnotator extends JCasAnnotator_ImplBase  {
       // 
 //      OntologyServiceResponse.Result uniprotResult = null;
       List<Finding> result = null;
-      try {
-//        uniprotResult = goService.findUniprotEntitiesPaged(queryText, 0);
-        result = ConcpetWebService.getConceptWebService(goService, queryText);
-      } catch (IOException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-        System.out.println("Service break down");
-      }
+      //        uniprotResult = goService.findUniprotEntitiesPaged(queryText, 0);
+      result = ConcpetWebService.getConceptWebService(goService, queryText);
       // store the rank of each answer
       int rank = 0;
       // store the concept name
