@@ -74,6 +74,7 @@ public class QueryDocAnnotator extends JCasAnnotator_ImplBase {
       
       // return a list of documents
       if (pubmedResult != null) {
+    	 
         List<PubMedSearchServiceResponse.Document> docList = pubmedResult.getDocuments();
         // rank
         int rank = 0;
@@ -81,12 +82,15 @@ public class QueryDocAnnotator extends JCasAnnotator_ImplBase {
         for(PubMedSearchServiceResponse.Document doc : docList){
           // docid
           String docID = doc.getPmid();
+//          System.err.println("pmid:"+docID);
           // docURI
           String uri = "http://www.ncbi.nlm.nih.gov/pubmed/" + docID;
           // Title
           String title = doc.getTitle();
           
           String abs = doc.getDocumentAbstract();
+//          System.out.println("===abstract=====");
+//          System.err.println(abs);
           // new a document 
           Document document = TypeFactory.createDocument(aJCas, uri, 0.0, abs, rank, queryText, "", 
                   new ArrayList<CandidateAnswerVariant>(), title, docID);
