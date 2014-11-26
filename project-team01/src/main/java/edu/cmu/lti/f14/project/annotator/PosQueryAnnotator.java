@@ -50,11 +50,10 @@ public class PosQueryAnnotator extends JCasAnnotator_ImplBase {
 			for (Map.Entry<Integer, Integer> entry : begin2end.entrySet()) {
 				// Create an atomic query first
 			        String text=queString.substring(entry.getKey(), entry.getValue());
-			       
-			        ret=ret+text+" ";
+			        ret=ret+text+" AND ";
 			}
-			ato.setText(ret.substring(0, ret.length()-1));
-			System.err.println("text:"+ret.substring(0, ret.length()-1));
+			ato.setText(ret.substring(0, ret.length()-5));
+			System.err.println("text:"+ret.substring(0, ret.length()-5));
 	        ato.addToIndexes();
 		}
 	}
