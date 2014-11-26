@@ -47,13 +47,14 @@ public class PosQueryAnnotator extends JCasAnnotator_ImplBase {
 					.getGeneSpans(queString);
 			 AtomicQueryConcept ato = new AtomicQueryConcept(aJCas);
 			 String ret="";
+			 String operator=" ";
 			for (Map.Entry<Integer, Integer> entry : begin2end.entrySet()) {
 				// Create an atomic query first
 			        String text=queString.substring(entry.getKey(), entry.getValue());
-			        ret=ret+text+" AND ";
+			        ret=ret+text+operator;
 			}
-			ato.setText(ret.substring(0, ret.length()-5));
-			System.err.println("text:"+ret.substring(0, ret.length()-5));
+			ato.setText(ret.substring(0, ret.length()-operator.length()));
+//			System.err.println("text:"+ret.substring(0, ret.length()-operator.length()));
 	        ato.addToIndexes();
 		}
 	}
