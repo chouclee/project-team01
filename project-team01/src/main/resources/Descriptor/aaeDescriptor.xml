@@ -15,7 +15,10 @@
     <delegateAnalysisEngine key="posQueryDescriptor">
       <import name="Descriptor.posQueryDescriptor"/>
     </delegateAnalysisEngine>
-    </delegateAnalysisEngineSpecifiers>
+  <delegateAnalysisEngine key="docReRankDescriptor">
+      <import name="Descriptor.docReRankDescriptor"/>
+    </delegateAnalysisEngine>
+  </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
     <name>aaeDescriptor</name>
     <description/>
@@ -28,6 +31,7 @@
         <node>posQueryDescriptor</node>
         <node>queryCombDescriptor</node>
         <node>documentDescriptor</node>
+        <node>docReRankDescriptor</node>
         <node>conceptDescriptor</node>
         </fixedFlow>
     </flowConstraints>

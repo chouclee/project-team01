@@ -90,12 +90,12 @@ public class QueryDocAnnotator extends JCasAnnotator_ImplBase {
           // new a document 
           Document document = TypeFactory.createDocument(aJCas, uri, 0.0, abs, rank, queryText, "", 
                   new ArrayList<CandidateAnswerVariant>(), title, docID);
-          
-          
+          if (document.getText() == null || document.getText().trim().length() == 0)
+        	  continue;
           
           document.addToIndexes();
-          
-          rank++;
+      
+          //rank++;
           
         }
       }  
