@@ -31,6 +31,11 @@ public class StanfordLemmatizer {
   
   public static int MAX_WORD_LEN = 128;
   
+  public static String process(String w) {
+    String textHandled = w.replace("?", "").replace(".", "").replace(",", "").replace("\"", "");
+    return stemWord(textHandled);
+  }
+  
   public static String stemWord(String w) {
     String t = null;
     try {
