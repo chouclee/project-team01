@@ -3,7 +3,7 @@
   <primitive>true</primitive>
   <annotatorImplementationName>edu.cmu.lti.f14.project.annotator.DocRerank</annotatorImplementationName>
   <analysisEngineMetaData>
-    <name>docRerankDescriptor</name>
+    <name>docRankDescriptor</name>
     <description/>
     <version>1.0</version>
     <vendor/>
