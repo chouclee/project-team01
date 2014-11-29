@@ -11,6 +11,10 @@ public class RetrievalMeasures {
    * @param ret
    * @return
    */
+  public static int[] overallGold = new int[3];
+  public static int[] overallTP = new int[3];
+  public static int[] overallRetrieved = new int[3];
+  public static int type;
   public static<T> double precision(List<T> goldStand,List<T> ret ) {
     if (ret.size() == 0 ||goldStand.size() == 0)
       return 0.0;
@@ -18,9 +22,11 @@ public class RetrievalMeasures {
     int positiveTrue = 0;
     for (T retrieved : ret) {
       if (gold.contains(retrieved)) {
-        positiveTrue++; // find one in gold standard output true 
+        positiveTrue++; // find one in gold standard output true
+        overallTP[type]++;
       }
     }
+    overallRetrieved[type] += ret.size();
     return (double)positiveTrue/ret.size();
   }
   
@@ -38,8 +44,10 @@ public class RetrievalMeasures {
     for (T retrieved : ret) {
       if (gold.contains(retrieved)) {
         positiveTrue++; // find one in gold standard output true 
+        //overallTP[type]++;
       }
     }
+    overallGold[type] += goldStand.size();
     return (double)positiveTrue/goldStand.size();
   }
   
