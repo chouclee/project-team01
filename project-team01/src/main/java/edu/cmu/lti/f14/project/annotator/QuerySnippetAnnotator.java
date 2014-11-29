@@ -42,7 +42,7 @@ import static java.util.stream.Collectors.toList;
 public class QuerySnippetAnnotator extends JCasAnnotator_ImplBase {
 
     
-  public String URL_PRE= "http://metal.lti.cs.cmu.edu:30002/pmc/";
+  public String URL_PRE= "http://gold.lti.cs.cmu.edu:30002/pmc/";
   
   private static final CloseableHttpClient http = HttpClients.createDefault();
   
