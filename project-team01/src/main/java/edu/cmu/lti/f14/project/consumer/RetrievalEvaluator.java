@@ -193,16 +193,25 @@ public class RetrievalEvaluator extends CasConsumer_ImplBase {
     Double[] recalls =new Double[3];
     Double[] fscores =new Double[3];
     Double[] avgP = new Double[3];
+    RetrievalMeasures.type = 0;
     precisions[0] = RetrievalMeasures.precision(goldDocs, myDocs);
+    RetrievalMeasures.type = 1;
     precisions[1] = RetrievalMeasures.precision(goldConcepts, myConcepts);
+    RetrievalMeasures.type = 2;
     precisions[2] = RetrievalMeasures.precision(goldTriples, myTriples);
     precision.add(precisions);
+    RetrievalMeasures.type = 0;
     recalls[0] = RetrievalMeasures.recall(goldDocs, myDocs);
+    RetrievalMeasures.type = 1;
     recalls[1] = RetrievalMeasures.recall(goldConcepts, myConcepts);
+    RetrievalMeasures.type = 2;
     recalls[2] = RetrievalMeasures.recall(goldTriples, myTriples);
     recall.add(recalls);
+    RetrievalMeasures.type = 0;
     fscores[0] = RetrievalMeasures.f1Measure(precisions[0], recalls[0]);
+    RetrievalMeasures.type = 1;
     fscores[1] = RetrievalMeasures.f1Measure(precisions[1], recalls[1]);
+    RetrievalMeasures.type = 2;
     fscores[2] = RetrievalMeasures.f1Measure(precisions[2], recalls[2]);
     fmeasure.add(fscores);
     avgP[0] = RetrievalMeasures.avgPreision(goldDocs, myDocs);
@@ -269,6 +278,12 @@ public class RetrievalEvaluator extends CasConsumer_ImplBase {
     System.out.print("\nGMAP:");
     for (int j = 0; j < gmap.length; j++)
 		System.out.print(gmap[j] +  "\t");
+    System.out.print("\nfinalPrecision:");
+    for (int j = 0; j < gmap.length; j++)
+  		System.out.print(RetrievalMeasures.overallTP[j] * 1.0 / RetrievalMeasures.overallRetrieved[j]  +  "\t");
+    System.out.print("\nfinalRecall:");
+    for (int j = 0; j < gmap.length; j++)
+  		System.out.print(RetrievalMeasures.overallTP[j] * 1.0 / RetrievalMeasures.overallGold[j]  +  "\t");
     System.out.println();
   }
 }
