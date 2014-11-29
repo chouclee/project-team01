@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <primitive>false</primitive>
   <delegateAnalysisEngineSpecifiers>
@@ -20,6 +21,9 @@
     <delegateAnalysisEngine key="documentDescriptor">
       <import name="Descriptor.documentDescriptor"/>
     </delegateAnalysisEngine>
+  <delegateAnalysisEngine key="docReRankDescriptor">
+      <import name="Descriptor.docReRankDescriptor"/>
+    </delegateAnalysisEngine>
   </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
     <name>aaeDescriptor</name>
@@ -33,9 +37,10 @@
         <node>posQueryDescriptor</node>
         <node>queryCombDescriptor</node>
         <node>documentDescriptor</node>
+        <node>docReRankDescriptor</node>
         <node>conceptDescriptor</node>
         <node>tripleDescriptor</node>
-        <node>snippedDescriptor</node>
+      <node>snippedDescriptor</node>
       </fixedFlow>
     </flowConstraints>
     <fsIndexCollection/>
