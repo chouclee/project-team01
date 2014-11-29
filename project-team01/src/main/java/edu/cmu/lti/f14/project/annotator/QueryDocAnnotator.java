@@ -98,6 +98,9 @@ public class QueryDocAnnotator extends JCasAnnotator_ImplBase {
           
           
           document.addToIndexes();
+          
+          rank++;
+          
         }
       }  
     }
