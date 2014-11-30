@@ -40,7 +40,7 @@ public class PosTagNamedEntityRecognizer {
 //        String ne = token.get(NamedEntityTagAnnotation.class);     
 //        String syn = token.get(NamedEntityTagAnnotation.class);     
         System.err.println(pos+","+token);
-        if (pos.startsWith("NN")) {
+        if (pos.startsWith("NN")||pos.startsWith("JJ")) {
           candidate.add(token);
         } else if (candidate.size() > 0) {
           int begin = candidate.get(0).beginPosition();
