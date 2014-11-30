@@ -34,8 +34,8 @@ public class StanfordLemmatizer {
   public static String process(String w) {
     String textHandled = w.replace(",", "").replace(":", "").replace("'s", "").replace("\"", "")
             .replace("?", "").replace(".", "").replace("--"," ").replace("-", " ").replace(";", "")
-            .replace("(", "").replace("", ")").replaceAll("\\[(\\d-?|,?)\\]", "");
-    return stemWord(textHandled);
+            .replace("(", "").replace(")", "").replaceAll("\\[(\\d-?|,?)\\]", "");
+    return stemText(textHandled);
   }
   
   public static String stemWord(String w) {
