@@ -2,14 +2,14 @@
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <primitive>false</primitive>
   <delegateAnalysisEngineSpecifiers>
-    <delegateAnalysisEngine key="docRerankDescriptor">
-      <import name="Descriptor.docRerankDescriptor"/>
-    </delegateAnalysisEngine>
     <delegateAnalysisEngine key="snippedDescriptor">
       <import name="Descriptor.snippedDescriptor"/>
     </delegateAnalysisEngine>
     <delegateAnalysisEngine key="posQueryDescriptor">
       <import name="Descriptor.posQueryDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="docRankDescriptor">
+      <import name="Descriptor.docRankDescriptor"/>
     </delegateAnalysisEngine>
     <delegateAnalysisEngine key="tripleDescriptor">
       <import name="Descriptor.tripleDescriptor"/>
@@ -38,7 +38,7 @@
         <node>documentDescriptor</node>
         <node>conceptDescriptor</node>
         <node>tripleDescriptor</node>
-        <node>docRerankDescriptor</node>
+        <node>docRankDescriptor</node>
         <node>snippedDescriptor</node>
       </fixedFlow>
     </flowConstraints>
