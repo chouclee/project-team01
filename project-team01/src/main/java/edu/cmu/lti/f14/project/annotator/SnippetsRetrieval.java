@@ -86,7 +86,10 @@ public class SnippetsRetrieval extends JCasAnnotator_ImplBase {
     int v= 1;
     for (Passage p : res) {
       p.setRank(v++);
+      p.addToIndexes();
     }
+    if (res.size()!=0)
+      System.out.println(res.get(0).getText());
   }
 
 
