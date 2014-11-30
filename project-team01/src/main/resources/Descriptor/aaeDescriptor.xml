@@ -3,9 +3,6 @@
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <primitive>false</primitive>
   <delegateAnalysisEngineSpecifiers>
-    <delegateAnalysisEngine key="queryCombDescriptor">
-      <import name="Descriptor.queryCombDescriptor"/>
-    </delegateAnalysisEngine>
     <delegateAnalysisEngine key="documentDescriptor">
       <import name="Descriptor.documentDescriptor"/>
     </delegateAnalysisEngine>
@@ -15,10 +12,13 @@
     <delegateAnalysisEngine key="posQueryDescriptor">
       <import name="Descriptor.posQueryDescriptor"/>
     </delegateAnalysisEngine>
-  <delegateAnalysisEngine key="docReRankDescriptor">
+    <delegateAnalysisEngine key="queryCombDescriptor">
+      <import name="Descriptor.queryCombDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="docReRankDescriptor">
       <import name="Descriptor.docReRankDescriptor"/>
     </delegateAnalysisEngine>
-  </delegateAnalysisEngineSpecifiers>
+    </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
     <name>aaeDescriptor</name>
     <description/>
@@ -31,8 +31,8 @@
         <node>posQueryDescriptor</node>
         <node>queryCombDescriptor</node>
         <node>documentDescriptor</node>
-        <node>docReRankDescriptor</node>
         <node>conceptDescriptor</node>
+        <node>docReRankDescriptor</node>
         </fixedFlow>
     </flowConstraints>
     <fsIndexCollection/>
