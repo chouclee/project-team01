@@ -20,6 +20,7 @@ import org.apache.uima.resource.ResourceInitializationException;
 
 import util.Utils;
 import util.TypeFactory;
+import edu.cmu.lti.f14.project.docstore.CollectionStat;
 import edu.cmu.lti.oaqa.bio.bioasq.services.GoPubMedService;
 import edu.cmu.lti.oaqa.bio.bioasq.services.PubMedSearchServiceResponse;
 import edu.cmu.lti.oaqa.type.answer.CandidateAnswerVariant;
@@ -30,6 +31,7 @@ import edu.cmu.lti.oaqa.type.retrieval.Document;
 public class QueryDocAnnotator extends JCasAnnotator_ImplBase {
   GoPubMedService goService;
   
+  public static CollectionStat stat;
   /**
    * Initialize the PubMedService
    * 
@@ -38,7 +40,7 @@ public class QueryDocAnnotator extends JCasAnnotator_ImplBase {
    */
   public void initialize(UimaContext aContext) throws ResourceInitializationException {
     super.initialize(aContext);
-    
+    stat = new CollectionStat();
     try {
       goService = new GoPubMedService("project.properties");
     } catch (ConfigurationException e) {
@@ -78,7 +80,7 @@ public class QueryDocAnnotator extends JCasAnnotator_ImplBase {
         // rank
         int rank = 0;
         // iterate through the whole documents
-        for(PubMedSearchServiceResponse.Document doc : docList){
+        for(PubMedSearchServiceResponse.Document doc : docList){  
           // docid
           String docID = doc.getPmid();
           // docURI
@@ -90,8 +92,8 @@ public class QueryDocAnnotator extends JCasAnnotator_ImplBase {
           // new a document 
           Document document = TypeFactory.createDocument(aJCas, uri, 0.0, abs, rank, queryText, "", 
                   new ArrayList<CandidateAnswerVariant>(), title, docID);
-          if (document.getText() == null || document.getText().trim().length() == 0)
-        	  continue;
+          
+          stat.addDoc(document);
           
           document.addToIndexes();
       
