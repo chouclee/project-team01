@@ -41,4 +41,46 @@ public class Similartiy {
     }  
     return bm25Score;
   }
+  
+  public static double consineSim(String query, String context) {
+    query = StanfordLemmatizer.process(query);
+    String[] q = query.split("\\s+");
+    HashMap<String, Integer> queryVector = new HashMap<String, Integer>();
+    for (String term : q) {
+      Integer tf = queryVector.get(term);
+      if (tf == null)
+        queryVector.put(term, 1);
+      else
+        queryVector.put(term, tf + 1);
+    }
+    
+    context = StanfordLemmatizer.process(context);
+    String[] c = query.split("\\s+");
+    HashMap<String, Integer> docVector = new HashMap<String, Integer>();
+    for (String term : c) {
+      Integer tf = docVector.get(term);
+      if (tf == null)
+        docVector.put(term, 1);
+      else
+        docVector.put(term, tf + 1);
+    }
+    
+    double cosine_similarity = 0.0;
+
+    // TODO :: compute cosine similarity between two sentences
+    double overlap = 0.0, normQuery = 0.0, normDoc = 0.0;
+    for (String token : queryVector.keySet()) {
+      normQuery += Math.pow(queryVector.get(token), 2);
+      if (docVector.containsKey(token))
+        overlap += queryVector.get(token) * docVector.get(token);
+    }
+
+    for (String token : docVector.keySet()) {
+      normDoc += Math.pow(docVector.get(token), 2);
+    }
+
+    cosine_similarity = overlap / (Math.sqrt(normDoc) * Math.sqrt(normQuery));
+
+    return cosine_similarity;
+  }
 }
