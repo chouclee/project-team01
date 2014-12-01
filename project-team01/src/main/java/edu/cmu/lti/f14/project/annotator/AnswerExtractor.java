@@ -16,6 +16,7 @@ import util.TypeFactory;
 
 import com.google.common.collect.Lists;
 
+import edu.cmu.lti.oaqa.type.answer.Answer;
 import edu.cmu.lti.oaqa.type.retrieval.AtomicQueryConcept;
 import edu.cmu.lti.oaqa.type.retrieval.ConceptSearchResult;
 import edu.cmu.lti.oaqa.type.retrieval.Passage;
