@@ -28,6 +28,11 @@ import edu.cmu.lti.oaqa.type.retrieval.AtomicQueryConcept;
 import edu.cmu.lti.oaqa.type.retrieval.ComplexQueryConcept;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
 
+/**
+ * Retrieve documents
+ * @author xzhan
+ *
+ */
 public class QueryDocAnnotator extends JCasAnnotator_ImplBase {
   GoPubMedService goService;
   

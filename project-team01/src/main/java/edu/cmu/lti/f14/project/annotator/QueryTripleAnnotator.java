@@ -26,7 +26,11 @@ import edu.cmu.lti.oaqa.type.retrieval.ComplexQueryConcept;
 import edu.cmu.lti.oaqa.type.retrieval.TripleSearchResult;
 
 
-
+/**
+ * Retrieve Triples
+ * @author xzhan
+ *
+ */
 public class QueryTripleAnnotator extends JCasAnnotator_ImplBase {
   GoPubMedService goService;
     

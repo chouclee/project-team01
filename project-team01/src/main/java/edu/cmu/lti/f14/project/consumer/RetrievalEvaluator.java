@@ -50,6 +50,11 @@ import edu.cmu.lti.oaqa.type.retrieval.ConceptSearchResult;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
 import edu.cmu.lti.oaqa.type.retrieval.TripleSearchResult;
 
+/**
+ * Evaluate retrieved concepts, documents, triples. 
+ * @author kangh
+ *
+ */
 public class RetrievalEvaluator extends CasConsumer_ImplBase {
 
 	/**

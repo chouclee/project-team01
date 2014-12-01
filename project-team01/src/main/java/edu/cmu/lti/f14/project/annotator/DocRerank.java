@@ -25,7 +25,11 @@ import edu.cmu.lti.oaqa.type.retrieval.AtomicQueryConcept;
 import edu.cmu.lti.oaqa.type.retrieval.ComplexQueryConcept;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
 
-
+/**
+ * Use BM25 retrieval algorithm to re-rank all retrieved documents.
+ * @author zhouchel
+ *
+ */
 public class DocRerank extends JCasAnnotator_ImplBase {
   
   private CollectionStat stat;
@@ -116,7 +120,12 @@ public class DocRerank extends JCasAnnotator_ImplBase {
     String content = sb.toString();
     return content;
   }
-
+  
+  /**
+   * Comparator for document similarity
+   * @author zhouchel
+   *
+   */
   class DocSimComparator implements Comparator<Document> {
     @Override
     public int compare(Document lhs, Document rhs) {

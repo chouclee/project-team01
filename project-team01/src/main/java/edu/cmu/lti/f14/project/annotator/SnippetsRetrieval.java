@@ -39,6 +39,11 @@ import edu.cmu.lti.oaqa.type.retrieval.ComplexQueryConcept;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
 import edu.cmu.lti.oaqa.type.retrieval.Passage;
 
+/**
+ * Retrieve snippt from documents
+ * @author zhouchel
+ *
+ */
 public class SnippetsRetrieval extends JCasAnnotator_ImplBase {
 
   private static final TokenizerFactory TOKENIZER_FACTORY = IndoEuropeanTokenizerFactory.INSTANCE;

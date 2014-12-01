@@ -23,6 +23,11 @@ import com.aliasi.util.AbstractExternalizable;
 
 import edu.cmu.lti.oaqa.type.input.Question;
 
+/**
+ * Use Lingpipe NER to extract bio-related terms.
+ * @author kangh
+ *
+ */
 public class NLPAnnotator extends JCasAnnotator_ImplBase {
 
 	/**

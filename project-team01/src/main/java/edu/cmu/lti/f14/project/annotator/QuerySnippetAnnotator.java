@@ -39,6 +39,11 @@ import java.util.Objects;
 
 import static java.util.stream.Collectors.toList;
 
+/**
+ * Retrieve snippet from documents
+ * @author xzhan
+ *
+ */
 public class QuerySnippetAnnotator extends JCasAnnotator_ImplBase {
 
     
@@ -155,13 +160,7 @@ public class QuerySnippetAnnotator extends JCasAnnotator_ImplBase {
       }catch(IOException e){
         e.printStackTrace();
       }
-      
-        
-        
-        
-        
     }
-      
   }
   
   /**

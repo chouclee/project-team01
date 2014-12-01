@@ -4,11 +4,23 @@ import java.util.HashMap;
 
 import util.StanfordLemmatizer;
 
+/**
+ * Similarity function collection
+ * @author zhouchel
+ *
+ */
 public class Similartiy {
   public static final double k1 = 1.2;
   public static final double b = 0.75;
   public static final double k3 = 0.0;
   
+  /**
+   * Calculate document score using BM25 
+   * @param stat
+   * @param query
+   * @param docId
+   * @return
+   */
   public static double BM25(CollectionStat stat, String query, int docId) {
     query = StanfordLemmatizer.process(query);
     String[] q = query.split("\\s+");
@@ -42,6 +54,12 @@ public class Similartiy {
     return bm25Score;
   }
   
+  /**
+   * Calculate document score using Cosine similarity
+   * @param query
+   * @param context
+   * @return
+   */
   public static double consineSim(String query, String context) {
     query = StanfordLemmatizer.process(query);
     String[] q = query.split("\\s+");

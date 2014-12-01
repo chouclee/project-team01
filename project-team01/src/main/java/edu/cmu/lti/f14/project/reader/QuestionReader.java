@@ -20,6 +20,11 @@ import org.apache.uima.resource.ResourceInitializationException;
 import org.apache.uima.util.Progress;
 import org.apache.uima.util.ProgressImpl;
 
+/**
+ * Collection reader to read in all questions 
+ * @author smart moon
+ *
+ */
 public class QuestionReader extends CollectionReader_ImplBase {
 	private final String PARAM_INFILEPATH="INFILE";
 	private String mFilePath;

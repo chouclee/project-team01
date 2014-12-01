@@ -36,6 +36,11 @@ import edu.cmu.lti.oaqa.type.retrieval.ComplexQueryConcept;
 import util.LuceneConfig;
 import edu.cmu.lti.oaqa.type.input.Question;
 
+/**
+ * Remove stopwords, stem sentences.
+ * @author smart moon
+ *
+ */
 public class QueryAnnotator extends JCasAnnotator_ImplBase {
 	// //////
 	private BufferedReader br = null;

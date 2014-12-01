@@ -19,6 +19,11 @@ import edu.cmu.lti.oaqa.type.retrieval.AtomicQueryConcept;
 import edu.cmu.lti.oaqa.type.retrieval.ComplexQueryConcept;
 import edu.cmu.lti.oaqa.type.retrieval.QueryOperator;
 
+/**
+ * Add query operator, expand atomic query into complex query.
+ * @author smart moon
+ *
+ */
 public class QueryCombAnnotator extends JCasAnnotator_ImplBase {
 
 	@Override

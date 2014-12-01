@@ -28,6 +28,11 @@ import edu.cmu.lti.oaqa.type.retrieval.AtomicQueryConcept;
 import edu.cmu.lti.oaqa.type.retrieval.ComplexQueryConcept;
 import edu.cmu.lti.oaqa.type.retrieval.ConceptSearchResult;
 
+/**
+ * Retrieve concepts with complex query.
+ * @author xzhan
+ *
+ */
 public class QueryConceptAnnotator extends JCasAnnotator_ImplBase  {
 
   GoPubMedService goService;

@@ -27,6 +27,11 @@ import edu.cmu.lti.oaqa.type.answer.Answer;
 import edu.cmu.lti.oaqa.type.input.Question;
 import edu.cmu.lti.oaqa.type.retrieval.ConceptSearchResult;
 
+/**
+ * Evaluate exact answer, output precision, recall, etc.
+ * @author kangh
+ *
+ */
 public class ExactAnswerEvaluator extends CasConsumer_ImplBase {
   // public static final String PARAM_OUTPUT = "outputFile";
   List<Question> goldout;
@@ -121,7 +126,15 @@ public class ExactAnswerEvaluator extends CasConsumer_ImplBase {
     }
     allAnswer++;
   }
-
+  
+  /**
+   * Calculate kappa
+   * @param TP
+   * @param TN
+   * @param FP
+   * @param FN
+   * @return
+   */
   double kappa(int TP, int TN, int FP, int FN){
 	  double all = TP + TN + FP + FN; 	 
 	  double total_agreement = TP + TN;
@@ -129,6 +142,10 @@ public class ExactAnswerEvaluator extends CasConsumer_ImplBase {
 	  System.out.println("agreement_by_chance:" + agreement_by_chance);
 	  return (total_agreement - agreement_by_chance) / (all -agreement_by_chance); 
   }
+  
+  /**
+   * Output all evaluation information
+   */
   public void collectionProcessComplete(ProcessTrace arg0) throws ResourceProcessException,
           IOException {
     super.collectionProcessComplete(arg0);

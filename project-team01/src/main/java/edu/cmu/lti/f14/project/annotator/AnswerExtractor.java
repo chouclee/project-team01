@@ -26,11 +26,25 @@ import edu.cmu.lti.oaqa.type.answer.Answer;
 import edu.cmu.lti.oaqa.type.retrieval.AtomicQueryConcept;
 import edu.cmu.lti.oaqa.type.retrieval.Passage;
 
+/**
+ * Extract yes or no exact answer from snippets.
+ * @author zhouchel
+ *
+ */
 public class AnswerExtractor extends JCasAnnotator_ImplBase {
   private static BufferedReader in = null;
   private HashMap<String, Integer> dic;
 
   @Override
+  /**
+   * Provides access to external resources (other than the CAS)<br>
+   * Load parameters configuration from file paramConfig
+   * 
+   * @param aContext
+   *          provides UIMA resources with all access to external resources (other than the CAS)
+   *          
+   * @see AnalysisComponent#initialize(UimaContext)
+   */
   public void initialize(UimaContext aContext) throws ResourceInitializationException {
     super.initialize(aContext);
     String mFilePath = ((String) aContext.getConfigParameterValue("dictionary")).trim();

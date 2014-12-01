@@ -8,6 +8,11 @@ import java.util.List;
 import util.StanfordLemmatizer;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
 
+/**
+ * Calculate statistics of all retrieved documents 
+ * @author zhouchel
+ *
+ */
 public class CollectionStat {
   public Map<String, Integer> ctfMap;
   public Map<String, List<Integer>> invList;
@@ -17,6 +22,11 @@ public class CollectionStat {
   public int N; // corpus size
   public long collectionLength;
   
+  /**
+   * Statistics for a single document
+   * @author zhouchel
+   *
+   */
   class DocInfo {
     public String url;
     public int docId;
@@ -56,6 +66,10 @@ public class CollectionStat {
     collectionLength = 0;
   }
   
+  /**
+   * Add a document to collection
+   * @param doc
+   */
   public void addDoc(Document doc) {
     N++;
     DocInfo docInfo = new DocInfo(doc);
