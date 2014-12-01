@@ -35,10 +35,16 @@ public class ExactAnswerEvaluator extends CasConsumer_ImplBase {
 
   String outputPath;
 
+  int exactAnswerCorrect = 0;
   int exactAnswerTP = 0;
-
+  int exactAnswerTN = 0;
+  int exactAnswerFP = 0;
+  int exactAnswerFN = 0;
+  int goldAnswer = 0;
+  int goldAnswerP = 0; 
+  int goldAnswerN = 0;
   int allAnswer = 0;
-
+  int no = 0;
   @SuppressWarnings("unchecked")
   public void initialize() throws ResourceInitializationException {
     /*
@@ -95,19 +101,45 @@ public class ExactAnswerEvaluator extends CasConsumer_ImplBase {
     String goldAnswer = goldSet.get(question.getId()).getExactAnswer().trim().toLowerCase();
     FSIterator<TOP> ansIter = jcas.getJFSIndexRepository().getAllIndexedFS(Answer.type);
     Answer exactAnswer = (Answer) ansIter.next();
-    if (goldAnswer.matches(exactAnswer.getText())) {
-      exactAnswerTP++;
+    //System.out.println(exactAnswer.getText());
+    if (goldAnswer.matches(exactAnswer.getText()+"\\.*")) {
+       exactAnswerCorrect++;
+       if (goldAnswer.matches("yes\\.*")){
+    	   exactAnswerTP++;
+       }
+       else if (goldAnswer.matches("no\\.*")){
+    	   exactAnswerTN++;
+       }
+    }
+    else{
+    	if (goldAnswer.matches("yes\\.*")){
+    	   exactAnswerFP++;
+	    }
+	    else {
+	       exactAnswerFN++;
+	    }
     }
     allAnswer++;
   }
 
+  double kappa(int TP, int TN, int FP, int FN){
+	  double all = TP + TN + FP + FN; 	 
+	  double total_agreement = TP + TN;
+	  double agreement_by_chance = (TP + FP) * (TP + FN) / all  +  (TN + FP) * (TN + FN) / all;
+	  System.out.println("agreement_by_chance:" + agreement_by_chance);
+	  return (total_agreement - agreement_by_chance) / (all -agreement_by_chance); 
+  }
   public void collectionProcessComplete(ProcessTrace arg0) throws ResourceProcessException,
           IOException {
     super.collectionProcessComplete(arg0);
-    System.out.println(exactAnswerTP);
+    System.out.println("no:" + no);
+    System.out.println("confusion matrix: \n");
+    System.out.println(exactAnswerTP + "\t" + exactAnswerFP + "\n");
+    System.out.println(exactAnswerFN + "\t" + exactAnswerTN + "\n");
     System.out.println(allAnswer);
     System.out.println("=============================");
-    System.out.println("ExactAnswerPrecision: " + exactAnswerTP * 1.0 / allAnswer);
+    System.out.println("ExactAnswerPrecision: " + exactAnswerCorrect * 1.0 / allAnswer);
+    System.out.println("ExactAnswerKappa: " + kappa(exactAnswerTP, exactAnswerTN, exactAnswerFP, exactAnswerFN));
     System.out.println("=============================");
   }
 }
