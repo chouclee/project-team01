@@ -4,18 +4,16 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.List;
-
 import com.github.julman99.gsonfire.GsonFireBuilder;
 import com.github.julman99.gsonfire.TypeSelector;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 
 public class TestYesNoSet {
-
   public static final class QuestionTypeSelector implements TypeSelector<TestYesNoQuestion> {
     @Override
     public Class<? extends TestYesNoQuestion> getClassForElement(JsonElement readElement) {
-        return TestYesNoQuestion.class;
+      return TestYesNoQuestion.class;
     }
   }
 
@@ -66,5 +64,4 @@ public class TestYesNoSet {
       return false;
     return true;
   }
-
 }

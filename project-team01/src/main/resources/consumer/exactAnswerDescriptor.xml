@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<casConsumerDescription xmlns="http://uima.apache.org/resourceSpecifier">
+<?xml version="1.0" encoding="UTF-8"?><casConsumerDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <implementationName>edu.cmu.lti.f14.project.consumer.ExactAnswerEvaluator</implementationName>
   <processingResourceMetaData>
@@ -7,7 +6,7 @@
     <description/>
     <version>1.0</version>
     <vendor/>
-    <configurationParameters searchStrategy="language_fallback">
+    <configurationParameters>
       <configurationParameter>
         <name>goldFile</name>
         <type>String</type>
@@ -37,7 +36,7 @@
         <languagesSupported/>
       </capability>
     </capabilities>
-  <operationalProperties>
+    <operationalProperties>
       <modifiesCas>false</modifiesCas>
       <multipleDeploymentAllowed>false</multipleDeploymentAllowed>
       <outputsNewCASes>false</outputsNewCASes>
