@@ -1,3 +1,4 @@
+
 package edu.cmu.lti.f14.project.consumer;
 
 import static java.util.stream.Collectors.toList;
@@ -93,12 +94,14 @@ public class ExactAnswerEvaluator extends CasConsumer_ImplBase{
 	    Iterator<?> QuestionIter = QuestionIndex.iterator();
 	    Question question = (Question) QuestionIter.next();
 	    
-	    FSIndex<?> AnswerIndex = jcas.getAnnotationIndex(Answer.type);
+	 /*   FSIndex<?> AnswerIndex = jcas.getAnnotationIndex(Answer.type);
 	    Iterator<?> AnswerIter = AnswerIndex.iterator();
 	    Answer answer = (Answer) AnswerIter.next();
 	    String exactAnswer = answer.getText();
-	    String goldAnswer = goldSet.get(question.getId()).getExactAnswer();
-	    if (exactAnswer == goldAnswer){
+	    */
+	    String goldAnswer = goldSet.get(question.getId()).getExactAnswer().trim().toLowerCase();
+	    
+	    if (goldAnswer.matches("yes")){
 	    	exactAnswerTP++;
 	    }
 	    allAnswer++;
@@ -106,6 +109,8 @@ public class ExactAnswerEvaluator extends CasConsumer_ImplBase{
 	
 	 public void collectionProcessComplete(ProcessTrace arg0) throws ResourceProcessException,    IOException{
 		 super.collectionProcessComplete(arg0); 
+		 System.out.println(exactAnswerTP);
+		 System.out.println(allAnswer);
 		 System.out.println("=============================");
 		 System.out.println("ExactAnswerPrecision:  " +  exactAnswerTP * 1.0 / allAnswer);
 		 System.out.println("=============================");
