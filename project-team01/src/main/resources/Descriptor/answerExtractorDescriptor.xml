@@ -7,8 +7,22 @@
     <description/>
     <version>1.0</version>
     <vendor/>
-    <configurationParameters/>
-    <configurationParameterSettings/>
+    <configurationParameters>
+      <configurationParameter>
+        <name>dictionary</name>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>dictionary</name>
+        <value>
+          <string>dict.txt</string>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
     <typeSystemDescription>
       <imports>
         <import name="type.OAQATypes"/>
