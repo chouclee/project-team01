@@ -119,7 +119,7 @@ public class AnswerExtractor extends JCasAnnotator_ImplBase {
           no++;
       }
       String ans;
-      if (yes >= no)
+      if (yes > no)
         ans = "yes";
       else
         ans = "no";   

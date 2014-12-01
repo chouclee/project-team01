@@ -42,8 +42,6 @@ public class QueryCombAnnotator extends JCasAnnotator_ImplBase {
 	      terms.add(term);
 //	      System.out.println("term:"+term);
 	    }
-
-
 	    // Create the complex query.
 	    ComplexQueryConcept query = new ComplexQueryConcept(aJCas);
 	    query.setOperatorArgs(Utils.fromCollectionToFSList(aJCas, terms));
