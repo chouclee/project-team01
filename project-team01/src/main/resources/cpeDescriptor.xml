@@ -43,7 +43,7 @@
 				<nameValuePair>
 					<name>goldFile</name>
 					<value>
-						<string>/BioASQ-SampleData1B.json</string>
+						<string>/YesNoGoldAnswer.json</string>
 					</value>
 				</nameValuePair>
 			</configurationParameterSettings>
