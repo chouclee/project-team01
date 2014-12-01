@@ -122,9 +122,7 @@ public class AnswerExtractor extends JCasAnnotator_ImplBase {
       if (yes >= no)
         ans = "yes";
       else
-        ans = "no";
-      
-      
+        ans = "no";   
       /*
        * for (FeatureStructure fs : aJCas.getAnnotationIndex(Passage.type)) { Passage passage =
        * (Passage) fs; String text = passage.getText(); // extract answer System.out.println(text);
@@ -136,6 +134,7 @@ public class AnswerExtractor extends JCasAnnotator_ImplBase {
       // create Answer
       Answer answer = TypeFactory.createAnswer(aJCas, ans);
       answer.addToIndexes();
+      System.out.println(ans);
     }
 
   }
