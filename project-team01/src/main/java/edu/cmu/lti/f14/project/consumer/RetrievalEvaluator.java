@@ -103,8 +103,8 @@ public class RetrievalEvaluator extends CasConsumer_ImplBase {
 				.forEach(
 						input -> input.setBody(input.getBody().trim()
 								.replaceAll("\\s+", " ")));
-		System.out.println("concepts");
-		System.out.println(goldAnswer.get(1).getConcepts());
+		//System.out.println("concepts");
+	//	System.out.println(goldAnswer.get(1).getConcepts());
 		 for(TestQuestion q : goldAnswer){
 			 goldSet.put(q.getId(), q);
 		 }
