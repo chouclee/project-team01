@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+<?xml version="1.0" encoding="UTF-8"?><casConsumerDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
-  <primitive>true</primitive>
-  <annotatorImplementationName>edu.cmu.lti.f14.project.annotator.AnswerExtractor</annotatorImplementationName>
-  <analysisEngineMetaData>
-    <name>answerExtractorDescriptor</name>
+  <implementationName>edu.cmu.lti.f14.project.consumer.ExactAnswerEvaluator</implementationName>
+  <processingResourceMetaData>
+    <name>exactAnswerDescriptor</name>
     <description/>
     <version>1.0</version>
     <vendor/>
     <configurationParameters>
       <configurationParameter>
-        <name>dictionary</name>
+        <name>goldFile</name>
         <type>String</type>
         <multiValued>false</multiValued>
         <mandatory>false</mandatory>
@@ -17,9 +16,9 @@
     </configurationParameters>
     <configurationParameterSettings>
       <nameValuePair>
-        <name>dictionary</name>
+        <name>goldFile</name>
         <value>
-          <string>dict.txt</string>
+          <string>/YesNoGoldAnswer.json</string>
         </value>
       </nameValuePair>
     </configurationParameterSettings>
@@ -38,10 +37,10 @@
       </capability>
     </capabilities>
     <operationalProperties>
-      <modifiesCas>true</modifiesCas>
-      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <modifiesCas>false</modifiesCas>
+      <multipleDeploymentAllowed>false</multipleDeploymentAllowed>
       <outputsNewCASes>false</outputsNewCASes>
     </operationalProperties>
-  </analysisEngineMetaData>
+  </processingResourceMetaData>
   <resourceManagerConfiguration/>
-</analysisEngineDescription>
+</casConsumerDescription>
