@@ -64,7 +64,7 @@ public class RetrievalMeasures {
    * @return
    */
   public static<T> double avgPreision(List<T> goldStand,List<T> ret){
-    if (goldStand.size() == 0) 
+    if (goldStand == null || goldStand.size() == 0 || ret.size() == 0) 
       return 0.0;
     ArrayList<Double> p = new ArrayList<>();
     HashSet<T> gold = new HashSet<T>(goldStand);
