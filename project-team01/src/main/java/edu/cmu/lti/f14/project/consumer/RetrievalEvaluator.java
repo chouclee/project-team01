@@ -42,6 +42,7 @@ import com.google.common.collect.Lists;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import edu.cmu.lti.oaqa.type.answer.Answer;
 import edu.cmu.lti.oaqa.type.input.Question;
 import edu.cmu.lti.oaqa.type.retrieval.ConceptSearchResult;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
@@ -108,17 +109,18 @@ public class RetrievalEvaluator extends CasConsumer_ImplBase {
 				.forEach(
 						input -> input.setBody(input.getBody().trim()
 								.replaceAll("\\s+", " ")));
-		System.out.println("concepts");
-		System.out.println(goldAnswer.get(1).getConcepts());
-		for (TestQuestion q : goldAnswer) {
-			goldSet.put(q.getId(), q);
-		}
-		precision = new ArrayList<Double[]>();
-		recall = new ArrayList<Double[]>();
-		fmeasure = new ArrayList<Double[]>();
-		retrievalRes = new ArrayList<RetrievalResult>();
-		avgPrecision = new ArrayList<Double[]>();
-	}
+		//System.out.println("concepts");
+	//	System.out.println(goldAnswer.get(1).getConcepts());
+		 for(TestQuestion q : goldAnswer){
+			 goldSet.put(q.getId(), q);
+		 }
+		 precision = new ArrayList<Double[]>();
+		 recall = new ArrayList<Double[]>();
+		 fmeasure = new ArrayList<Double[]>();
+		 retrievalRes = new ArrayList<RetrievalResult>();
+		 avgPrecision = new ArrayList<Double[]>();
+  }
+
 
 	/**
 	 * Fetch three items: concept, document and triples from correspond
@@ -179,10 +181,12 @@ public class RetrievalEvaluator extends CasConsumer_ImplBase {
 		List<String> myConcepts = new ArrayList<String>(conceptMap.values());
 		List<String> myDocs = new ArrayList<String>(docMap.values());
 		List<Triple> myTriples = new ArrayList<Triple>(triMap.values());
-		List<Snippet> mySnippets = new ArrayList<Snippet>();// /
+		List<Snippet> mySnippets = new ArrayList<Snippet>();// 
+		 FSIterator<TOP> ansIter = jcas.getJFSIndexRepository().getAllIndexedFS(Answer.type);
+		 Answer exactAnswer = (Answer) ansIter.next();
 		retrievalRes.add(new RetrievalResult(question.getId(), question
 				.getText(), myConcepts, myDocs, myTriples, mySnippets,
-				"exact_anwer", "ideal_answer"));
+				exactAnswer.getText(), "no ideal_answer"));
 		List<String> goldDocs = new ArrayList<String>();
 		List<String> goldConcepts = new ArrayList<String>();
 		List<Triple> goldTriples = new ArrayList<Triple>();
