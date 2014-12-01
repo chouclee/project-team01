@@ -7,7 +7,7 @@
     <description/>
     <version>1.0</version>
     <vendor/>
-    <configurationParameters>
+    <configurationParameters searchStrategy="language_fallback">
       <configurationParameter>
         <name>goldFile</name>
         <type>String</type>
@@ -15,8 +15,19 @@
         <mandatory>false</mandatory>
       </configurationParameter>
     </configurationParameters>
-    <configurationParameterSettings/>
-    <typeSystemDescription/>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>goldFile</name>
+        <value>
+          <string>/YesNoGoldAnswer.json</string>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <typeSystemDescription>
+      <imports>
+        <import name="type.OAQATypes"/>
+      </imports>
+    </typeSystemDescription>
     <typePriorities/>
     <fsIndexCollection/>
     <capabilities>

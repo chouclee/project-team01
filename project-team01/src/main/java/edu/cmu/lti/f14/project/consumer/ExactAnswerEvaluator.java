@@ -13,6 +13,7 @@ import json.gson.RetrievalResult;
 import json.gson.TestQuestion;
 import json.gson.TestSet;
 import json.gson.TestYesNoQuestion;
+import json.gson.TestYesNoSet;
 
 import org.apache.uima.cas.CAS;
 import org.apache.uima.cas.CASException;
@@ -52,12 +53,12 @@ public class ExactAnswerEvaluator extends CasConsumer_ImplBase{
 	      goldAnswer = TestSet.load(getClass().getResourceAsStream(goldPath)).stream()
 	              .collect(toList());*/
 			if (String.class.isAssignableFrom(value.getClass())) {
-	      goldAnswer = (List<TestYesNoQuestion>) TestSet.load(getClass().
+	      goldAnswer = (List<TestYesNoQuestion>) TestYesNoSet.load(getClass().
 				        getResourceAsStream(String.class.cast(value))).
 				        stream().collect(toList());
 			} else if (String[].class.isAssignableFrom(value.getClass())) {
 				goldAnswer = (List<TestYesNoQuestion>) Arrays.stream(String[].class.cast(value)).flatMap(
-								path -> TestSet.load(getClass().getResourceAsStream(path)).
+								path -> TestYesNoSet.load(getClass().getResourceAsStream(path)).
 								stream()).collect(toList());
 			}
 			// trim question texts
