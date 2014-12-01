@@ -79,12 +79,12 @@ public class AnswerExtractor extends JCasAnnotator_ImplBase {
       FSIterator<TOP> pIter = aJCas.getJFSIndexRepository().getAllIndexedFS(Passage.type);
       ArrayList<Double> weight = new ArrayList<>();
       while (pIter.hasNext() && ++v < 5) {
-        double score = 0.0;
+        //double score = 0.0;
         Passage p = (Passage) pIter.next();
         String text = p.getText();
         String[] terms = text.split("\\s+");
         Integer w = null;
-        int negOrPos = 0;
+        Double negOrPos = 0.0;
         System.out.println(text);
         for (String term : terms) {
           w = dic.get(term);
@@ -99,18 +99,18 @@ public class AnswerExtractor extends JCasAnnotator_ImplBase {
         else {
           String[] section = sections.split("\\.");
           if ((section[1]).equals("0"))
-            score += 2.0;
+            negOrPos += 2.0;
           else
-            score += 0.0;
+            negOrPos += 0.0;
         }
 
-        score += p.getScore() * 10;
+        negOrPos += p.getScore() * 5;
         //score += 1.0 / p.getRank();
-        weight.add(score);
-        System.out.println(score);
+        weight.add(negOrPos);
+        System.out.println(negOrPos);
       }
       int yes = 0, no = 0;
-      double threshold = 1.0;
+      double threshold = 5.5;
       for (Double w : weight) {
         if (w > threshold) {
           yes++;
