@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 62b8f9e2890155fbc4e23e1a8d205ae3cc9bcdf4
 package edu.cmu.lti.f14.project.consumer;
 
 import static java.util.stream.Collectors.toList;
@@ -94,6 +97,7 @@ public class ExactAnswerEvaluator extends CasConsumer_ImplBase{
 	    Iterator<?> QuestionIter = QuestionIndex.iterator();
 	    Question question = (Question) QuestionIter.next();
 	    
+<<<<<<< HEAD
 	 /*   FSIndex<?> AnswerIndex = jcas.getAnnotationIndex(Answer.type);
 	    Iterator<?> AnswerIter = AnswerIndex.iterator();
 	    Answer answer = (Answer) AnswerIter.next();
@@ -102,6 +106,14 @@ public class ExactAnswerEvaluator extends CasConsumer_ImplBase{
 	    String goldAnswer = goldSet.get(question.getId()).getExactAnswer().trim().toLowerCase();
 	    
 	    if (goldAnswer.matches("yes")){
+=======
+	    FSIndex<?> AnswerIndex = jcas.getAnnotationIndex(Answer.type);
+	    Iterator<?> AnswerIter = AnswerIndex.iterator();
+	    Answer answer = (Answer) AnswerIter.next();
+	    String exactAnswer = answer.getText();
+	    String goldAnswer = goldSet.get(question.getId()).getExactAnswer();
+	    if (exactAnswer == goldAnswer){
+>>>>>>> 62b8f9e2890155fbc4e23e1a8d205ae3cc9bcdf4
 	    	exactAnswerTP++;
 	    }
 	    allAnswer++;
@@ -109,8 +121,11 @@ public class ExactAnswerEvaluator extends CasConsumer_ImplBase{
 	
 	 public void collectionProcessComplete(ProcessTrace arg0) throws ResourceProcessException,    IOException{
 		 super.collectionProcessComplete(arg0); 
+<<<<<<< HEAD
 		 System.out.println(exactAnswerTP);
 		 System.out.println(allAnswer);
+=======
+>>>>>>> 62b8f9e2890155fbc4e23e1a8d205ae3cc9bcdf4
 		 System.out.println("=============================");
 		 System.out.println("ExactAnswerPrecision:  " +  exactAnswerTP * 1.0 / allAnswer);
 		 System.out.println("=============================");

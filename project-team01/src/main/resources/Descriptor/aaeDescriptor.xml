@@ -11,6 +11,9 @@
     <delegateAnalysisEngine key="answerExtractorDescriptor">
       <import name="Descriptor.answerExtractorDescriptor"/>
     </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="posQueryDescriptor">
+      <import name="Descriptor.posQueryDescriptor"/>
+    </delegateAnalysisEngine>
     <delegateAnalysisEngine key="queryCombDescriptor">
       <import name="Descriptor.queryCombDescriptor"/>
     </delegateAnalysisEngine>
