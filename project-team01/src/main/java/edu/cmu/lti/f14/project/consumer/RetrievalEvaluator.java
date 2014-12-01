@@ -23,6 +23,8 @@ import json.gson.RetrievalResult;
 import json.gson.Snippet;
 import json.gson.TestQuestion;
 import json.gson.TestSet;
+import json.gson.TestYesNoQuestion;
+import json.gson.TestYesNoSet;
 import json.gson.Triple;
 
 import org.apache.uima.cas.CAS;
@@ -56,7 +58,7 @@ public class RetrievalEvaluator extends CasConsumer_ImplBase {
 	 */
 	public static final String PARAM_OUTPUT = "outputFile";
 	List<Question> goldout;
-	HashMap<String, TestQuestion> goldSet = new HashMap<String, TestQuestion>();
+	HashMap<String, TestYesNoQuestion> goldSet = new HashMap<String, TestYesNoQuestion>();
 	String outputPath;
 	List<Double[]> precision;
 	List<Double[]> recall;
@@ -80,7 +82,7 @@ public class RetrievalEvaluator extends CasConsumer_ImplBase {
 		// String goldPath = "src/main/resources/data/BioASQ-SampleData1B.json";
 		String goldPath = ((String) getUimaContext().getConfigParameterValue(
 				"goldFile")).trim();
-		List<TestQuestion> goldAnswer;
+		List<TestYesNoQuestion> goldAnswer;
 		goldAnswer = Lists.newArrayList();
 		Object value = goldPath;
 
@@ -90,7 +92,7 @@ public class RetrievalEvaluator extends CasConsumer_ImplBase {
 		 * .collect(toList());
 		 */
 		if (String.class.isAssignableFrom(value.getClass())) {
-			goldAnswer = TestSet
+			goldAnswer = TestYesNoSet
 					.load(getClass().getResourceAsStream(
 							String.class.cast(value))).stream()
 					.collect(toList());
@@ -98,7 +100,7 @@ public class RetrievalEvaluator extends CasConsumer_ImplBase {
 			goldAnswer = Arrays
 					.stream(String[].class.cast(value))
 					.flatMap(
-							path -> TestSet.load(
+							path -> TestYesNoSet.load(
 									getClass().getResourceAsStream(path))
 									.stream()).collect(toList());
 		}
@@ -111,7 +113,7 @@ public class RetrievalEvaluator extends CasConsumer_ImplBase {
 								.replaceAll("\\s+", " ")));
 		//System.out.println("concepts");
 	//	System.out.println(goldAnswer.get(1).getConcepts());
-		 for(TestQuestion q : goldAnswer){
+		 for(TestYesNoQuestion q : goldAnswer){
 			 goldSet.put(q.getId(), q);
 		 }
 		 precision = new ArrayList<Double[]>();
@@ -186,7 +188,7 @@ public class RetrievalEvaluator extends CasConsumer_ImplBase {
 		 Answer exactAnswer = (Answer) ansIter.next();
 		retrievalRes.add(new RetrievalResult(question.getId(), question
 				.getText(), myConcepts, myDocs, myTriples, mySnippets,
-				exactAnswer.getText(), "no ideal_answer"));
+				exactAnswer.getText(), goldSet.get(question.getId()).getExactAnswer()));
 		List<String> goldDocs = new ArrayList<String>();
 		List<String> goldConcepts = new ArrayList<String>();
 		List<Triple> goldTriples = new ArrayList<Triple>();
