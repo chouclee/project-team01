@@ -2,26 +2,23 @@
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <primitive>false</primitive>
   <delegateAnalysisEngineSpecifiers>
-    <delegateAnalysisEngine key="docRerankDescriptor">
-      <import name="Descriptor.docRerankDescriptor"/>
-    </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="snippedDescriptor">
-      <import name="Descriptor.snippedDescriptor"/>
-    </delegateAnalysisEngine>
     <delegateAnalysisEngine key="posQueryDescriptor">
       <import name="Descriptor.posQueryDescriptor"/>
     </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="tripleDescriptor">
-      <import name="Descriptor.tripleDescriptor"/>
+    <delegateAnalysisEngine key="docRankDescriptor">
+      <import name="Descriptor.docRankDescriptor"/>
     </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="conceptDescriptor">
-      <import name="Descriptor.conceptDescriptor"/>
+    <delegateAnalysisEngine key="answerExtractorDescriptor">
+      <import name="Descriptor.answerExtractorDescriptor"/>
     </delegateAnalysisEngine>
     <delegateAnalysisEngine key="posQueryDescriptor">
       <import name="Descriptor.posQueryDescriptor"/>
     </delegateAnalysisEngine>
     <delegateAnalysisEngine key="queryCombDescriptor">
       <import name="Descriptor.queryCombDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="snippetRetrievalDescriptor">
+      <import name="Descriptor.snippetRetrievalDescriptor"/>
     </delegateAnalysisEngine>
     <delegateAnalysisEngine key="documentDescriptor">
       <import name="Descriptor.documentDescriptor"/>
@@ -39,10 +36,9 @@
         <node>posQueryDescriptor</node>
         <node>queryCombDescriptor</node>
         <node>documentDescriptor</node>
-        <node>conceptDescriptor</node>
-        <node>tripleDescriptor</node>
-        <node>docRerankDescriptor</node>
-        <node>snippedDescriptor</node>
+        <node>docRankDescriptor</node>
+        <node>snippetRetrievalDescriptor</node>
+        <node>answerExtractorDescriptor</node>
       </fixedFlow>
     </flowConstraints>
     <fsIndexCollection/>
