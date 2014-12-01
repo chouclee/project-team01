@@ -8,8 +8,14 @@
     <delegateAnalysisEngine key="docRankDescriptor">
       <import name="Descriptor.docRankDescriptor"/>
     </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="tripleDescriptor">
+      <import name="Descriptor.tripleDescriptor"/>
+    </delegateAnalysisEngine>
     <delegateAnalysisEngine key="answerExtractorDescriptor">
       <import name="Descriptor.answerExtractorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="conceptDescriptor">
+      <import name="Descriptor.conceptDescriptor"/>
     </delegateAnalysisEngine>
     <delegateAnalysisEngine key="queryCombDescriptor">
       <import name="Descriptor.queryCombDescriptor"/>
@@ -33,6 +39,8 @@
         <node>posQueryDescriptor</node>
         <node>queryCombDescriptor</node>
         <node>documentDescriptor</node>
+        <node>conceptDescriptor</node>
+        <node>tripleDescriptor</node>
         <node>docRankDescriptor</node>
         <node>snippetRetrievalDescriptor</node>
         <node>answerExtractorDescriptor</node>
