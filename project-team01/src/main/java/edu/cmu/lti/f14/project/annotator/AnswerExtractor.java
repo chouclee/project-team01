@@ -17,9 +17,12 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.cas.TOP;
 import org.apache.uima.resource.ResourceInitializationException;
 
+import util.TypeFactory;
+
 import com.google.common.collect.Lists;
 
 import edu.cmu.lti.f14.project.reader.QuestionReader;
+import edu.cmu.lti.oaqa.type.answer.Answer;
 import edu.cmu.lti.oaqa.type.retrieval.AtomicQueryConcept;
 import edu.cmu.lti.oaqa.type.retrieval.Passage;
 
@@ -87,25 +90,41 @@ public class AnswerExtractor extends JCasAnnotator_ImplBase {
           w = dic.get(term);
           if (w != null) {
             negOrPos += w;
-            System.err.println("Positive/Negative: " + w);
+            //System.err.println("Positive/Negative: " + w);
           }
         }
         String sections = p.getBeginSection();
         if (sections.equals("title"))
-          score += 0.5;
+          negOrPos += 1;
         else {
           String[] section = sections.split("\\.");
           if ((section[1]).equals("0"))
-            score += 1.0;
+            score += 2.0;
           else
-            score += 0.2;
+            score += 0.0;
         }
 
-        score += p.getScore() * 2;
-        score += 1.0 / p.getRank();
+        score += p.getScore() * 10;
+        //score += 1.0 / p.getRank();
         weight.add(score);
         System.out.println(score);
       }
+      int yes = 0, no = 0;
+      double threshold = 1.0;
+      for (Double w : weight) {
+        if (w > threshold) {
+          yes++;
+        }
+        else 
+          no++;
+      }
+      String ans;
+      if (yes >= no)
+        ans = "yes";
+      else
+        ans = "no";
+      
+      
       /*
        * for (FeatureStructure fs : aJCas.getAnnotationIndex(Passage.type)) { Passage passage =
        * (Passage) fs; String text = passage.getText(); // extract answer System.out.println(text);
@@ -115,8 +134,8 @@ public class AnswerExtractor extends JCasAnnotator_ImplBase {
       // evaluate
 
       // create Answer
-      // TypeFactory.createAnswer(aJCas, selectedNEs);
-
+      Answer answer = TypeFactory.createAnswer(aJCas, ans);
+      answer.addToIndexes();
     }
 
   }
