@@ -55,7 +55,6 @@ public class PosQueryAnnotator extends JCasAnnotator_ImplBase {
 			}
 			ato.setText(ret.substring(0, ret.length()-operator.length()));
 //			System.err.println("text:"+ret.substring(0, ret.length()-operator.length()));
-
 	        ato.addToIndexes();
 		}
 	}

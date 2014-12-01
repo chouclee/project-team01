@@ -36,6 +36,7 @@ public class TestSet {
 
   private static Gson gson = new GsonFireBuilder().registerTypeSelector(TestQuestion.class,
           new QuestionTypeSelector()).createGson();
+
   private List<? extends TestQuestion> questions;
 
   public TestSet(List<? extends TestQuestion> answers) {
