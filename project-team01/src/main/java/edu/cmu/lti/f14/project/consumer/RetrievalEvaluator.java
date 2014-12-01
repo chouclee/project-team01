@@ -45,7 +45,6 @@ import util.RetrievalMeasures;
 import com.google.common.collect.Lists;
 import com.google.gson.Gson;
 
-import edu.cmu.lti.oaqa.type.answer.Answer;
 import edu.cmu.lti.oaqa.type.input.Question;
 import edu.cmu.lti.oaqa.type.retrieval.ConceptSearchResult;
 import edu.cmu.lti.oaqa.type.retrieval.Document;
@@ -85,7 +84,7 @@ public class RetrievalEvaluator extends CasConsumer_ImplBase {
 	  List<TestQuestion> goldAnswer;
 	  goldAnswer = Lists.newArrayList();
 	  Object value = goldPath;
-      
+    
     /*if (goldPath != null && goldPath.length() != 0) {
       goldAnswer = TestSet.load(getClass().getResourceAsStream(goldPath)).stream()
               .collect(toList());*/
@@ -142,7 +141,6 @@ public class RetrievalEvaluator extends CasConsumer_ImplBase {
     Iterator<?> QuestionIter = QuestionIndex.iterator();
     Question question = (Question) QuestionIter.next();
     
-
     FSIterator<TOP> conceptIter = jcas.getJFSIndexRepository().getAllIndexedFS(ConceptSearchResult.type);
 
     Map<Integer,String> conceptMap = new TreeMap<Integer,String>();  
