@@ -60,19 +60,20 @@ public class ExactAnswerEvaluator extends CasConsumer_ImplBase {
      */
     // String goldPath = "src/main/resources/data/BioASQ-SampleData1B.json";
     String goldPath = ((String) getUimaContext().getConfigParameterValue("goldFile")).trim();
-    List<TestYesNoQuestion> goldAnswer;
-    goldAnswer = Lists.newArrayList();
+    List<TestYesNoQuestion> goldAnswer = null;
+    //goldAnswer = Lists.newArrayList();
+    //goldAnswer = new ArrayList<TestYesNoQuestion>();
     Object value = goldPath;
     /*
      * if (goldPath != null && goldPath.length() != 0) { goldAnswer =
      * TestSet.load(getClass().getResourceAsStream(goldPath)).stream() .collect(toList());
      */
     if (String.class.isAssignableFrom(value.getClass())) {
-      goldAnswer = (List<TestYesNoQuestion>) TestYesNoSet
+      goldAnswer = TestYesNoSet
               .load(getClass().getResourceAsStream(String.class.cast(value))).stream()
               .collect(toList());
     } else if (String[].class.isAssignableFrom(value.getClass())) {
-      goldAnswer = (List<TestYesNoQuestion>) Arrays.stream(String[].class.cast(value))
+      goldAnswer = Arrays.stream(String[].class.cast(value))
               .flatMap(path -> TestYesNoSet.load(getClass().getResourceAsStream(path)).stream())
               .collect(toList());
     }
