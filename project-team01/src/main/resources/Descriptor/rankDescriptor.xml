@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
-  <primitive>true</primitive>
-  <annotatorImplementationName>edu.cmu.lti.f14.project.annotator.AnswerExtractor</annotatorImplementationName>
+  <primitive>true</primitive>  <annotatorImplementationName>edu.cmu.lti.f14.project.annotator.rankAjustment</annotatorImplementationName>
   <analysisEngineMetaData>
-    <name>answerExtractorDescriptor</name>
+    <name>rankDescriptor</name>
     <description/>
     <version>1.0</version>
     <vendor/>
@@ -23,7 +23,7 @@
         <languagesSupported/>
       </capability>
     </capabilities>
-    <operationalProperties>
+  <operationalProperties>
       <modifiesCas>true</modifiesCas>
       <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
       <outputsNewCASes>false</outputsNewCASes>
