@@ -1,149 +1,429 @@
 {
-    "questions": [
-        {
-            "body": "Is Rheumatoid Arthritis more common in men or women?", 
-            "type": "factoid", 
-            "id": "5118dd1305c10fae75000001"
-        }, 
-        {
-            "body": "Are there any DNMT3 proteins present in plants?", 
-            "type": "yesno", 
-            "id": "511a16f9df1ebcce7d000005"
-        }, 
-        {
-            "body": "What is the most prominent sequence consensus for the polyadenylation site?", 
-            "type": "list", 
-            "id": "5133b9455274a5fb0700000c"
-        }, 
-        {
-            "body": "What is the function of the mammalian gene Irg1?", 
-            "type": "summary", 
-            "id": "513832a75274a5fb07000012"
-        }, 
-        {
-            "body": "Is thrombophilia related to increased risk of miscarriage?", 
-            "type": "yesno", 
-            "id": "513cdc38bee46bd34c000007"
-        }, 
-        {
-            "body": "Which extra thyroid tissues have thyrotropin (TSH) receptors?", 
-            "type": "list", 
-            "id": "513f45abbee46bd34c000013"
-        }, 
-        {
-            "body": "What is the methyl donor of DNA (cytosine-5)-methyltransferases?", 
-            "type": "factoid", 
-            "id": "51404dd723fec90375000002"
-        }, 
-        {
-            "body": "Super-SILAC is a method used in quantitative proteomics. What is the super-SILAC mix?\n(SILAC: Stable Isotopic labelling by aminoacids in cell culture)", 
-            "type": "summary", 
-            "id": "51430930d24251bc0500000b"
-        }, 
-        {
-            "body": "Tumors of which three organs are classically associated with the multiple endocrine neoplasia type 1 syndrome?", 
-            "type": "list", 
-            "id": "51477de5d24251bc05000020"
-        }, 
-        {
-            "body": "What is the mechanism of action of anticoagulant medication Dabigatran?", 
-            "type": "summary", 
-            "id": "51485a4dd24251bc0500002a"
-        }, 
-        {
-            "body": "Is Mammaprint approved by the United States Food and Drug Administration?", 
-            "type": "yesno", 
-            "id": "51487821d24251bc0500002f"
-        }, 
-        {
-            "body": "Which acetylcholinesterase inhibitors are used for treatment of myasthenia gravis?", 
-            "type": "list", 
-            "id": "5149199dd24251bc05000040"
-        }, 
-        {
-            "body": "Which medication should be administered when managing patients with suspected acute opioid overdose?", 
-            "type": "factoid", 
-            "id": "5149f494d24251bc0500004c"
-        }, 
-        {
-            "body": "Does the Oncotype DX test work with paraffin embedded tissues?", 
-            "type": "yesno", 
-            "id": "514a0f0ad24251bc05000052"
-        }, 
-        {
-            "body": "Is depression associated with poor prognosis of brain tumor patients?", 
-            "type": "yesno", 
-            "id": "514cc8dcd24251bc05000066"
-        }, 
-        {
-            "body": "What is known about the reimbursement of Viagra", 
-            "type": "summary", 
-            "id": "5150b45ad24251bc0500006f"
-        }, 
-        {
-            "body": "Does HER2 under-expression lead to favorable response to trastuzumab?", 
-            "type": "yesno", 
-            "id": "51542eacd24251bc05000084"
-        }, 
-        {
-            "body": "Can Alzheimer's disease related miRNAs be detected in patients' blood?", 
-            "type": "yesno", 
-            "id": "5156beb4d24251bc05000089"
-        }, 
-        {
-            "body": "Which antiepileptic drug is most strongly associated with spina bifida? ", 
-            "type": "factoid", 
-            "id": "51588bb2d24251bc05000091"
-        }, 
-        {
-            "body": "Where in the cell do we find the protein Cep135?", 
-            "type": "factoid", 
-            "id": "51596a8ad24251bc0500009e"
-        }, 
-        {
-            "body": "In which isochores are Alu elements enriched?", 
-            "type": "list", 
-            "id": "515bd543298dcd4e51000001"
-        }, 
-        {
-            "body": "Which forms of cancer is the Tpl2 gene associated with?", 
-            "type": "list", 
-            "id": "515bf6d6298dcd4e51000004"
-        }, 
-        {
-            "body": "What is the INSURE procedure in premature babies.", 
-            "type": "summary", 
-            "id": "515db54c298dcd4e51000016"
-        }, 
-        {
-            "body": "Which species may be used for the biotechnological production of itaconic acid?", 
-            "type": "list", 
-            "id": "515ffc2b298dcd4e51000035"
-        }, 
-        {
-            "body": "What is the role of TRH in hypertension?", 
-            "type": "summary", 
-            "id": "51602609298dcd4e5100003a"
-        }, 
-        {
-            "body": "Which histone marks are deposited by Set7?", 
-            "type": "list", 
-            "id": "5160412d298dcd4e5100003c"
-        }, 
-        {
-            "body": "Are there any desmins present in plants?", 
-            "type": "yesno", 
-            "id": "5162e011298dcd4e51000049"
-        }, 
-        {
-            "body": "Is it possible to detect survivin protein expression in normal human adult tissues?", 
-            "type": "summary", 
-            "id": "516425ff298dcd4e51000051"
-        }, 
-        {
-            "body": "How do histone methyltransferases cause histone modification?", 
-            "type": "summary", 
-            "id": "51659356298dcd4e5100005a"
-        }
-    ]
+        "questions": [
+                {
+                        "body": "Are there any DNMT3 proteins present in plants?", 
+                        "type": "yesno", 
+                        "id": "511a16f9df1ebcce7d000005"
+                }, 
+                {
+                        "body": "Is thrombophilia related to increased risk of miscarriage?", 
+                        "type": "yesno", 
+                        "id": "513cdc38bee46bd34c000007"
+                }, 
+                {
+                        "body": "Is Mammaprint approved by the United States Food and Drug Administration?", 
+                        "type": "yesno", 
+                        "id": "51487821d24251bc0500002f"
+                }, 
+                {
+                        "body": "Does the Oncotype DX test work with paraffin embedded tissues?", 
+                        "type": "yesno", 
+                        "id": "514a0f0ad24251bc05000052"
+                }, 
+                {
+                        "body": "Is depression associated with poor prognosis of brain tumor patients?", 
+                        "type": "yesno", 
+                        "id": "514cc8dcd24251bc05000066"
+                }, 
+                {
+                        "body": "Does HER2 under-expression lead to favorable response to trastuzumab?", 
+                        "type": "yesno", 
+                        "id": "51542eacd24251bc05000084"
+                }, 
+                {
+                        "body": "Can Alzheimer's disease related miRNAs be detected in patients' blood?", 
+                        "type": "yesno", 
+                        "id": "5156beb4d24251bc05000089"
+                }, 
+                {
+                        "body": "Are there any desmins present in plants?", 
+                        "type": "yesno", 
+                        "id": "5162e011298dcd4e51000049"
+                }, 
+                {
+                        "body": "Is Propofol used for short-term sedation?", 
+                        "type": "yesno", 
+                        "id": "515d9a42298dcd4e5100000d"
+                }, 
+                {
+                        "body": "Is macroautophagy a selective degradation process?", 
+                        "type": "yesno", 
+                        "id": "51bedaac3148fdcc22da7188"
+                }, 
+                {
+                        "body": "Is abdominal pain a common symptom in autism?", 
+                        "type": "yesno", 
+                        "id": "515debe7298dcd4e51000026"
+                }, 
+                {
+                        "body": "Are long non coding RNAs as conserved in sequence as protein coding genes?", 
+                        "type": "yesno", 
+                        "id": "51757bbb8ed59a060a00002e"
+                }, 
+                {
+                        "body": "Is alternative splicing of apoptotic genes playing a role in the response to DNA or mitochondrial damage?", 
+                        "type": "yesno", 
+                        "id": "5175b97a8ed59a060a00002f"
+                }, 
+                {
+                        "body": "Is intense physical activity associated with longevity?", 
+                        "type": "yesno", 
+                        "id": "518ccac0310faafe0800000b"
+                }, 
+                {
+                        "body": "Are there clinical trials on stem cells in multiple sclerosis", 
+                        "type": "yesno", 
+                        "id": "515df5b2298dcd4e5100002c"
+                }, 
+                {
+                        "body": "Are proteasome inhibitors good candidates for treatment of leukemia and solid tumors?", 
+                        "type": "yesno", 
+                        "id": "517179718ed59a060a00000e"
+                }, 
+                {
+                        "body": "Are histone deacetylase (HDAC) inhibitors good candidates to control metastasis of solid tumors?", 
+                        "type": "yesno", 
+                        "id": "517404878ed59a060a000023"
+                }, 
+                {
+                        "body": "Does triiodothyronine stimulate red blood cell sodium potassium pump?", 
+                        "type": "yesno", 
+                        "id": "517a8a718ed59a060a00003e"
+                }, 
+                {
+                        "body": "Is Rheumatoid Arthritis related to myopathy?", 
+                        "type": "yesno", 
+                        "id": "515ae990d24251bc050000ad"
+                }, 
+                {
+                        "body": "Have microRNAs been implicated in pharmacogenomics? ", 
+                        "type": "yesno", 
+                        "id": "5162a089298dcd4e51000043"
+                }, 
+                {
+                        "body": "is intense physical activity associated with longevity ?", 
+                        "type": "yesno", 
+                        "id": "5167be1a298dcd4e5100005c"
+                }, 
+                {
+                        "body": "Does Serca2a bind PLN in the heart?", 
+                        "type": "yesno", 
+                        "id": "51680b05298dcd4e51000064"
+                }, 
+                {
+                        "body": "Is the UGT1A1*28 polymorphism associated with irinotecan response in Caucasians?", 
+                        "type": "yesno", 
+                        "id": "51680b0e298dcd4e51000065"
+                }, 
+                {
+                        "body": "Does triiodothyronine play a regulatory role in insulin secretion from pancreas?", 
+                        "type": "yesno", 
+                        "id": "51682382298dcd4e51000066"
+                }, 
+                {
+                        "body": "Does  thyroid hormone receptor beta1 affect insulin secretion?", 
+                        "type": "yesno", 
+                        "id": "516c0e08298dcd4e5100006d"
+                }, 
+                {
+                        "body": "Does thyroid hormone signaling affect microRNAs expression in the heart?", 
+                        "type": "yesno", 
+                        "id": "516c1041298dcd4e51000070"
+                }, 
+                {
+                        "body": "Does cucumber lower blood sugar in diabetics?", 
+                        "type": "yesno", 
+                        "id": "516c220e298dcd4e51000071"
+                }, 
+                {
+                        "body": "Does dronedarone  affect  T3 and T4 levels?", 
+                        "type": "yesno", 
+                        "id": "516d4b27298dcd4e51000077"
+                }, 
+                {
+                        "body": "Does amiodarone affect thyroid hormone receptors in the myocardium?", 
+                        "type": "yesno", 
+                        "id": "516d5baa298dcd4e51000078"
+                }, 
+                {
+                        "body": "Do lincRNAs play a role in human cancer?", 
+                        "type": "yesno", 
+                        "id": "516e5f33298dcd4e5100007e"
+                }, 
+                {
+                        "body": "Is calcium overload involved in the development of diabetic cardiomyopathy?", 
+                        "type": "yesno", 
+                        "id": "517139098ed59a060a000004"
+                }, 
+                {
+                        "body": "Have mutations in the Polycomb group been found in human diseases?", 
+                        "type": "yesno", 
+                        "id": "5176c6d08ed59a060a000032"
+                }, 
+                {
+                        "body": "Does metformin interfere thyroxine absorption?", 
+                        "type": "yesno", 
+                        "id": "51406e6223fec90375000009"
+                }, 
+                {
+                        "body": "Are psammoma bodies characteristic to meningiomas?", 
+                        "type": "yesno", 
+                        "id": "514a4679d24251bc0500005b"
+                }, 
+                {
+                        "body": "Is Vitamin D deficiency in pregnant women associated with gestational diabetes?", 
+                        "type": "yesno", 
+                        "id": "515def40298dcd4e51000028"
+                }, 
+                {
+                        "body": "Does melanoma  occur in people of African origin ?", 
+                        "type": "yesno", 
+                        "id": "515df6f2298dcd4e5100002d"
+                }, 
+                {
+                        "body": "Can clonidine be used to reduce agitation in children.", 
+                        "type": "yesno", 
+                        "id": "515df89e298dcd4e5100002f"
+                }, 
+                {
+                        "body": "Is Bladder training an effective method to treat  urge incontinence ?", 
+                        "type": "yesno", 
+                        "id": "515df98f298dcd4e51000030"
+                }, 
+                {
+                        "body": "Do selenoproteins and selenium play a role in prostate cancer prevention?", 
+                        "type": "yesno", 
+                        "id": "515ed87c298dcd4e51000032"
+                }, 
+                {
+                        "body": "Have germline variants been associated to colorectal cancer?", 
+                        "type": "yesno", 
+                        "id": "5161cfa3298dcd4e5100003d"
+                }, 
+                {
+                        "body": "Could DNA (cytosine-5-)-methyltransferases serve as tumour markers?", 
+                        "type": "yesno", 
+                        "id": "5162e9df298dcd4e5100004b"
+                }, 
+                {
+                        "body": "Do DNA double-strand breaks play a causal role in carcinogenesis?", 
+                        "type": "yesno", 
+                        "id": "5162f5b6298dcd4e5100004c"
+                }, 
+                {
+                        "body": "Is it safe to take isotretinoin during pregnancy?", 
+                        "type": "yesno", 
+                        "id": "51640b4a298dcd4e51000050"
+                }, 
+                {
+                        "body": "Could Arimidex (anastrozole) cause hot flashes?", 
+                        "type": "yesno", 
+                        "id": "516523fd298dcd4e51000055"
+                }, 
+                {
+                        "body": "Is MammaPrint cleared by the United States Food and Drug Administration? ", 
+                        "type": "yesno", 
+                        "id": "5168023b298dcd4e51000061"
+                }, 
+                {
+                        "body": "Is it possible to detect survivin protein expression in normal human adult tissues?", 
+                        "type": "yesno", 
+                        "id": "51680a49298dcd4e51000062"
+                }, 
+                {
+                        "body": "Are viruses involved in the etiology of human subacute thyroiditis?", 
+                        "type": "yesno", 
+                        "id": "513711055274a5fb0700000e"
+                }, 
+                {
+                        "body": "Can PLN mutations lead to dilated cardiomyopathy?", 
+                        "type": "yesno", 
+                        "id": "5148e42cd24251bc0500003b"
+                }, 
+                {
+                        "body": "Is nimodipine recommended for prevention of vasospasm in aneurysmal subarachnoid hemorrhage patients?", 
+                        "type": "yesno", 
+                        "id": "51490275d24251bc0500003d"
+                }, 
+                {
+                        "body": "Is there a pharmacogenetic test for trastuzumab?", 
+                        "type": "yesno", 
+                        "id": "514a1469d24251bc05000056"
+                }, 
+                {
+                        "body": "Is paroxetine effective for treatment of premenstrual dysphoric disorder?", 
+                        "type": "yesno", 
+                        "id": "514a59c2d24251bc0500005d"
+                }, 
+                {
+                        "body": "Does cortical spreading depression appear in ischemic penumbra following ischemic stroke?", 
+                        "type": "yesno", 
+                        "id": "514b335dd24251bc05000061"
+                }, 
+                {
+                        "body": "Is there an association between c-reactive protein concentrations and outcomes of subarachnoid hemorrhage patients? ", 
+                        "type": "yesno", 
+                        "id": "514cbbf9d24251bc05000065"
+                }, 
+                {
+                        "body": "Is depression associated with poor prognosis of brain tumor patients?", 
+                        "type": "yesno", 
+                        "id": "514cc8dcd24251bc05000066"
+                }, 
+                {
+                        "body": "Is physical performance influenced by thyroid hormone metabolism?", 
+                        "type": "yesno", 
+                        "id": "5151b8efd24251bc0500007a"
+                }, 
+                {
+                        "body": "Is imatinib an antidepressant drug?", 
+                        "type": "yesno", 
+                        "id": "51542e84d24251bc05000083"
+                }, 
+                {
+                        "body": "Is the microRNA 132 (miR-132) involved in brain pathologies?", 
+                        "type": "yesno", 
+                        "id": "5156be5ed24251bc05000087"
+                }, 
+                {
+                        "body": "Is it feasible to determine the complete proteome of yeast?", 
+                        "type": "yesno", 
+                        "id": "5157fce5d24251bc0500008c"
+                }, 
+                {
+                        "body": "Does physical activity influence gut hormones?", 
+                        "type": "yesno", 
+                        "id": "5158644cd24251bc0500008e"
+                }, 
+                {
+                        "body": "Is factor XI deficient in Hemophilia C?", 
+                        "type": "yesno", 
+                        "id": "51588c1ad24251bc05000094"
+                }, 
+                {
+                        "body": "Is TREM2 associated with Alzheimer's disease in humans?", 
+                        "type": "yesno", 
+                        "id": "51588c34d24251bc05000095"
+                }, 
+                {
+                        "body": "Proteomic analyses need prior knowledge of the organism complete genome. Is the complete genome of the bacteria of the genus Arthrobacter available?", 
+                        "type": "yesno", 
+                        "id": "51593dc8d24251bc05000099"
+                }, 
+                {
+                        "body": "Does strenuous physical activity affect thyroid hormone metabolism?", 
+                        "type": "yesno", 
+                        "id": "51598b08d24251bc0500009f"
+                }, 
+                {
+                        "body": "Is cocaine use associated with increased risk for intracerebral hemorrhage?", 
+                        "type": "yesno", 
+                        "id": "5159b990d24251bc050000a3"
+                }, 
+                {
+                        "body": "Does thyroid hormone regulate calcium transient in the myocardium? ", 
+                        "type": "yesno", 
+                        "id": "515ac533d24251bc050000a9"
+                }, 
+                {
+                        "body": "Are there randomised controlled trials on sevoflurane?", 
+                        "type": "yesno", 
+                        "id": "515d9e5c298dcd4e5100000e"
+                }, 
+                {
+                        "body": "Is it possible to determine the proteome of a formalin fixed and paraffin embedded  (FFPE) tissue?", 
+                        "type": "yesno", 
+                        "id": "511a1e12df1ebcce7d000009"
+                }, 
+                {
+                        "body": "Is miR-21 related to carcinogenesis?", 
+                        "type": "yesno", 
+                        "id": "511a4ec01159fa8212000004"
+                }, 
+                {
+                        "body": "Are CpG islands located close to housekeeping genes?", 
+                        "type": "yesno", 
+                        "id": "5133b15e5274a5fb0700000b"
+                }, 
+                {
+                        "body": "Are nucleosomes positioned at DNA replication origins?", 
+                        "type": "yesno", 
+                        "id": "513596225274a5fb0700000d"
+                }, 
+                {
+                        "body": "Do Conserved noncoding elements act as enhancers?", 
+                        "type": "yesno", 
+                        "id": "5139ec51bee46bd34c000006"
+                }, 
+                {
+                        "body": "Is paramyxovirus involved in human subacute thyroiditis?", 
+                        "type": "yesno", 
+                        "id": "513efe01bee46bd34c00000e"
+                }, 
+                {
+                        "body": "Do proton pump inhibitors affect thyroxine absorption?", 
+                        "type": "yesno", 
+                        "id": "513f3ab6bee46bd34c00000f"
+                }, 
+                {
+                        "body": "Is microRNA(miRNA) 29 involved in post-ischemic cardiac remodeling?", 
+                        "type": "yesno", 
+                        "id": "513f4025bee46bd34c000011"
+                }, 
+                {
+                        "body": "Is microRNA(miRNA) 30 involved in post-ischemic cardiac remodeling?", 
+                        "type": "yesno", 
+                        "id": "513f4249bee46bd34c000012"
+                }, 
+                {
+                        "body": "Does triiodothyronine (T3) has cardiac angiogenic effects?", 
+                        "type": "yesno", 
+                        "id": "513f4892bee46bd34c000014"
+                }, 
+                {
+                        "body": "Is single-cell analysis (SCA) possible in proteomics?", 
+                        "type": "yesno", 
+                        "id": "5144bc8fd24251bc0500000e"
+                }, 
+                {
+                        "body": "Is miR-126 involved in heart failure?", 
+                        "type": "yesno", 
+                        "id": "51485008d24251bc05000028"
+                }, 
+                {
+                        "body": "Is there a difference in the rate between gene fusion and gene fission?", 
+                        "type": "yesno", 
+                        "id": "5149b575d24251bc05000047"
+                }, 
+                {
+                        "body": "Is marijuana use associated with increased risk for stroke?", 
+                        "type": "yesno", 
+                        "id": "5149e23dd24251bc0500004b"
+                }, 
+                {
+                        "body": "Have Quantitative Trait Loci affecting splicing (splicing QTLs) been linked to disease?", 
+                        "type": "yesno", 
+                        "id": "5158a5b8d24251bc05000097"
+                }, 
+                {
+                        "body": "Are chromomethylases present in animal genomes?", 
+                        "type": "yesno", 
+                        "id": "5171833c8ed59a060a00000f"
+                }, 
+                {
+                        "body": "Are transcription and splicing connected?", 
+                        "type": "yesno", 
+                        "id": "517395b98ed59a060a00001a"
+                }, 
+                {
+                        "body": "Can protein coding exons originate from ALU sequences?", 
+                        "type": "yesno", 
+                        "id": "51763a278ed59a060a000030"
+                }, 
+                {
+                        "body": "Has field-programmable gate array (FPGA) technology been used to solve sequence alignment problems?", 
+                        "type": "yesno", 
+                        "id": "51be1750047fa84d1d000005"
+                }
+        ]
 }
