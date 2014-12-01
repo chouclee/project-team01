@@ -92,7 +92,32 @@ public class AnswerExtractor extends JCasAnnotator_ImplBase {
       //TypeFactory.createAnswer(aJCas, selectedNEs);
       
       
-      
+      int yes = 0, no = 0;
+      double threshold = 1.0;
+      for (Double w : weight) {
+        if (w > threshold) {
+          yes++;
+        }
+        else 
+          no++;
+      }
+      String ans;
+      if (yes >= no)
+        ans = "yes";
+      else
+        ans = "no";   
+      /*
+       * for (FeatureStructure fs : aJCas.getAnnotationIndex(Passage.type)) { Passage passage =
+       * (Passage) fs; String text = passage.getText(); // extract answer System.out.println(text);
+       * if (++v >= 10) break; }
+       */
+
+      // evaluate
+
+      // create Answer
+      Answer answer = TypeFactory.createAnswer(aJCas, ans);
+      answer.addToIndexes();
+      System.out.println(ans);
     }
     
 
