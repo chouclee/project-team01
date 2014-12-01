@@ -20,7 +20,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/9584105"
                         ], 
                         "type": "yesno", 
-                        "id": "511a16f9df1ebcce7d000005"
+                        "id": "511a16f9df1ebcce7d000005", 
+                        "exact_answer": "Yes."
                 }, 
                 {
                         "snippets": [
@@ -84,7 +85,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/20860491"
                         ], 
                         "type": "yesno", 
-                        "id": "513cdc38bee46bd34c000007"
+                        "id": "513cdc38bee46bd34c000007", 
+                        "exact_answer": "Yes"
                 }, 
                 {
                         "snippets": [
@@ -238,7 +240,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/17462970"
                         ], 
                         "type": "yesno", 
-                        "id": "51487821d24251bc0500002f"
+                        "id": "51487821d24251bc0500002f", 
+                        "exact_answer": "Yes"
                 }, 
                 {
                         "snippets": [
@@ -311,7 +314,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/16361546"
                         ], 
                         "type": "yesno", 
-                        "id": "514a0f0ad24251bc05000052"
+                        "id": "514a0f0ad24251bc05000052", 
+                        "exact_answer": "Yes"
                 }, 
                 {
                         "snippets": [
@@ -406,7 +410,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/15072475"
                         ], 
                         "type": "yesno", 
-                        "id": "514cc8dcd24251bc05000066"
+                        "id": "514cc8dcd24251bc05000066", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -494,7 +499,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/11148461"
                         ], 
                         "type": "yesno", 
-                        "id": "51542eacd24251bc05000084"
+                        "id": "51542eacd24251bc05000084", 
+                        "exact_answer": "No"
                 }, 
                 {
                         "snippets": [
@@ -625,7 +631,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/23528227"
                         ], 
                         "type": "yesno", 
-                        "id": "5156beb4d24251bc05000089"
+                        "id": "5156beb4d24251bc05000089", 
+                        "exact_answer": "Yes"
                 }, 
                 {
                         "snippets": [
@@ -757,7 +764,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/7460905"
                         ], 
                         "type": "yesno", 
-                        "id": "5162e011298dcd4e51000049"
+                        "id": "5162e011298dcd4e51000049", 
+                        "exact_answer": "No."
                 }, 
                 {
                         "snippets": [
@@ -878,7 +886,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/22991132"
                         ], 
                         "type": "yesno", 
-                        "id": "515d9a42298dcd4e5100000d"
+                        "id": "515d9a42298dcd4e5100000d", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -1186,7 +1195,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/16203860"
                         ], 
                         "type": "yesno", 
-                        "id": "51bedaac3148fdcc22da7188"
+                        "id": "51bedaac3148fdcc22da7188", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -1805,7 +1815,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/12846385"
                         ], 
                         "type": "yesno", 
-                        "id": "515debe7298dcd4e51000026"
+                        "id": "515debe7298dcd4e51000026", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -1917,7 +1928,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/20587619"
                         ], 
                         "type": "yesno", 
-                        "id": "51757bbb8ed59a060a00002e"
+                        "id": "51757bbb8ed59a060a00002e", 
+                        "exact_answer": "No"
                 }, 
                 {
                         "snippets": [
@@ -1972,7 +1984,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/9010037"
                         ], 
                         "type": "yesno", 
-                        "id": "5175b97a8ed59a060a00002f"
+                        "id": "5175b97a8ed59a060a00002f", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -2045,7 +2058,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/2279154"
                         ], 
                         "type": "yesno", 
-                        "id": "518ccac0310faafe0800000b"
+                        "id": "518ccac0310faafe0800000b", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -2123,7 +2137,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/12376881"
                         ], 
                         "type": "yesno", 
-                        "id": "515df5b2298dcd4e5100002c"
+                        "id": "515df5b2298dcd4e5100002c", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -2254,7 +2269,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/22995770"
                         ], 
                         "type": "yesno", 
-                        "id": "517179718ed59a060a00000e"
+                        "id": "517179718ed59a060a00000e", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -2401,7 +2417,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/15318170"
                         ], 
                         "type": "yesno", 
-                        "id": "517404878ed59a060a000023"
+                        "id": "517404878ed59a060a000023", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -2543,7 +2560,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/1333560"
                         ], 
                         "type": "yesno", 
-                        "id": "517a8a718ed59a060a00003e"
+                        "id": "517a8a718ed59a060a00003e", 
+                        "exact_answer": "no"
                 }, 
                 {
                         "snippets": [
@@ -2601,7 +2619,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/10555889"
                         ], 
                         "type": "yesno", 
-                        "id": "515ae990d24251bc050000ad"
+                        "id": "515ae990d24251bc050000ad", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -2688,7 +2707,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/22909203"
                         ], 
                         "type": "yesno", 
-                        "id": "5162a089298dcd4e51000043"
+                        "id": "5162a089298dcd4e51000043", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -2869,7 +2889,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/21435018"
                         ], 
                         "type": "yesno", 
-                        "id": "5167be1a298dcd4e5100005c"
+                        "id": "5167be1a298dcd4e5100005c", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -2943,7 +2964,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/8702967"
                         ], 
                         "type": "yesno", 
-                        "id": "51680b05298dcd4e51000064"
+                        "id": "51680b05298dcd4e51000064", 
+                        "exact_answer": "Yes"
                 }, 
                 {
                         "snippets": [
@@ -3082,7 +3104,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/15286088"
                         ], 
                         "type": "yesno", 
-                        "id": "51680b0e298dcd4e51000065"
+                        "id": "51680b0e298dcd4e51000065", 
+                        "exact_answer": "Yes"
                 }, 
                 {
                         "snippets": [
@@ -3143,7 +3166,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/619228"
                         ], 
                         "type": "yesno", 
-                        "id": "51682382298dcd4e51000066"
+                        "id": "51682382298dcd4e51000066", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -3267,7 +3291,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/17293442"
                         ], 
                         "type": "yesno", 
-                        "id": "516c0e08298dcd4e5100006d"
+                        "id": "516c0e08298dcd4e5100006d", 
+                        "exact_answer": "no"
                 }, 
                 {
                         "snippets": [
@@ -3306,7 +3331,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/17379774"
                         ], 
                         "type": "yesno", 
-                        "id": "516c1041298dcd4e51000070"
+                        "id": "516c1041298dcd4e51000070", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -3378,7 +3404,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/22416705"
                         ], 
                         "type": "yesno", 
-                        "id": "516c220e298dcd4e51000071"
+                        "id": "516c220e298dcd4e51000071", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -3592,7 +3619,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/8640331"
                         ], 
                         "type": "yesno", 
-                        "id": "516d4b27298dcd4e51000077"
+                        "id": "516d4b27298dcd4e51000077", 
+                        "exact_answer": "no"
                 }, 
                 {
                         "snippets": [
@@ -3639,7 +3667,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/7598731"
                         ], 
                         "type": "yesno", 
-                        "id": "516d5baa298dcd4e51000078"
+                        "id": "516d5baa298dcd4e51000078", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -3726,7 +3755,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/23153939"
                         ], 
                         "type": "yesno", 
-                        "id": "516e5f33298dcd4e5100007e"
+                        "id": "516e5f33298dcd4e5100007e", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -4031,7 +4061,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/3384188"
                         ], 
                         "type": "yesno", 
-                        "id": "517139098ed59a060a000004"
+                        "id": "517139098ed59a060a000004", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -4120,7 +4151,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/16397222"
                         ], 
                         "type": "yesno", 
-                        "id": "5176c6d08ed59a060a000032"
+                        "id": "5176c6d08ed59a060a000032", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -4253,7 +4285,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/21041167"
                         ], 
                         "type": "yesno", 
-                        "id": "51406e6223fec90375000009"
+                        "id": "51406e6223fec90375000009", 
+                        "exact_answer": "No"
                 }, 
                 {
                         "body": "Are psammoma bodies characteristic to meningiomas?", 
@@ -4276,7 +4309,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/6699695"
                         ], 
                         "type": "yesno", 
-                        "id": "514a4679d24251bc0500005b"
+                        "id": "514a4679d24251bc0500005b", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -4526,7 +4560,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/14633808"
                         ], 
                         "type": "yesno", 
-                        "id": "515def40298dcd4e51000028"
+                        "id": "515def40298dcd4e51000028", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -4884,7 +4919,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/5776549"
                         ], 
                         "type": "yesno", 
-                        "id": "515df6f2298dcd4e5100002d"
+                        "id": "515df6f2298dcd4e5100002d", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -5148,7 +5184,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/11473855"
                         ], 
                         "type": "yesno", 
-                        "id": "515df89e298dcd4e5100002f"
+                        "id": "515df89e298dcd4e5100002f", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -5411,7 +5448,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/6887404"
                         ], 
                         "type": "yesno", 
-                        "id": "515df98f298dcd4e51000030"
+                        "id": "515df98f298dcd4e51000030", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -5688,7 +5726,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/15875088"
                         ], 
                         "type": "yesno", 
-                        "id": "515ed87c298dcd4e51000032"
+                        "id": "515ed87c298dcd4e51000032", 
+                        "exact_answer": "no"
                 }, 
                 {
                         "snippets": [
@@ -5788,7 +5827,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/17524638"
                         ], 
                         "type": "yesno", 
-                        "id": "5161cfa3298dcd4e5100003d"
+                        "id": "5161cfa3298dcd4e5100003d", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -5893,7 +5933,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/14742272"
                         ], 
                         "type": "yesno", 
-                        "id": "5162e9df298dcd4e5100004b"
+                        "id": "5162e9df298dcd4e5100004b", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -6217,7 +6258,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/22899337"
                         ], 
                         "type": "yesno", 
-                        "id": "5162f5b6298dcd4e5100004c"
+                        "id": "5162f5b6298dcd4e5100004c", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -6554,7 +6596,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/3162101"
                         ], 
                         "type": "yesno", 
-                        "id": "51640b4a298dcd4e51000050"
+                        "id": "51640b4a298dcd4e51000050", 
+                        "exact_answer": "no"
                 }, 
                 {
                         "snippets": [
@@ -7037,7 +7080,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/12902876"
                         ], 
                         "type": "yesno", 
-                        "id": "516523fd298dcd4e51000055"
+                        "id": "516523fd298dcd4e51000055", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -7339,7 +7383,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/18786252"
                         ], 
                         "type": "yesno", 
-                        "id": "5168023b298dcd4e51000061"
+                        "id": "5168023b298dcd4e51000061", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -7384,7 +7429,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/10626797"
                         ], 
                         "type": "yesno", 
-                        "id": "51680a49298dcd4e51000062"
+                        "id": "51680a49298dcd4e51000062", 
+                        "exact_answer": "no"
                 }, 
                 {
                         "snippets": [
@@ -7497,7 +7543,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/22136271"
                         ], 
                         "type": "yesno", 
-                        "id": "513711055274a5fb0700000e"
+                        "id": "513711055274a5fb0700000e", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -7557,7 +7604,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/12610310"
                         ], 
                         "type": "yesno", 
-                        "id": "5148e42cd24251bc0500003b"
+                        "id": "5148e42cd24251bc0500003b", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -7769,7 +7817,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/3521193"
                         ], 
                         "type": "yesno", 
-                        "id": "51490275d24251bc0500003d"
+                        "id": "51490275d24251bc0500003d", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -8014,7 +8063,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/11265171"
                         ], 
                         "type": "yesno", 
-                        "id": "514a1469d24251bc05000056"
+                        "id": "514a1469d24251bc05000056", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -8234,7 +8284,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/9213079"
                         ], 
                         "type": "yesno", 
-                        "id": "514a59c2d24251bc0500005d"
+                        "id": "514a59c2d24251bc0500005d", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -8509,7 +8560,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/14568331"
                         ], 
                         "type": "yesno", 
-                        "id": "514b335dd24251bc05000061"
+                        "id": "514b335dd24251bc05000061", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -8757,7 +8809,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/11680512"
                         ], 
                         "type": "yesno", 
-                        "id": "514cbbf9d24251bc05000065"
+                        "id": "514cbbf9d24251bc05000065", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -8940,7 +8993,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/15072475"
                         ], 
                         "type": "yesno", 
-                        "id": "514cc8dcd24251bc05000066"
+                        "id": "514cc8dcd24251bc05000066", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -9023,7 +9077,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/16910873"
                         ], 
                         "type": "yesno", 
-                        "id": "5151b8efd24251bc0500007a"
+                        "id": "5151b8efd24251bc0500007a", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -9155,7 +9210,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/22487918"
                         ], 
                         "type": "yesno", 
-                        "id": "51542e84d24251bc05000083"
+                        "id": "51542e84d24251bc05000083", 
+                        "exact_answer": "no"
                 }, 
                 {
                         "snippets": [
@@ -9418,7 +9474,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/17314675"
                         ], 
                         "type": "yesno", 
-                        "id": "5156be5ed24251bc05000087"
+                        "id": "5156be5ed24251bc05000087", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -9587,7 +9644,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/12912986"
                         ], 
                         "type": "yesno", 
-                        "id": "5157fce5d24251bc0500008c"
+                        "id": "5157fce5d24251bc0500008c", 
+                        "exact_answer": "Yes"
                 }, 
                 {
                         "snippets": [
@@ -9638,7 +9696,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/15795476"
                         ], 
                         "type": "yesno", 
-                        "id": "5158644cd24251bc0500008e"
+                        "id": "5158644cd24251bc0500008e", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -9822,7 +9881,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/1546275"
                         ], 
                         "type": "yesno", 
-                        "id": "51588c1ad24251bc05000094"
+                        "id": "51588c1ad24251bc05000094", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -9880,7 +9940,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/17088018"
                         ], 
                         "type": "yesno", 
-                        "id": "51588c34d24251bc05000095"
+                        "id": "51588c34d24251bc05000095", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -10053,7 +10114,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/23039946"
                         ], 
                         "type": "yesno", 
-                        "id": "51593dc8d24251bc05000099"
+                        "id": "51593dc8d24251bc05000099", 
+                        "exact_answer": "Yes"
                 }, 
                 {
                         "snippets": [
@@ -10097,7 +10159,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/16175495"
                         ], 
                         "type": "yesno", 
-                        "id": "51598b08d24251bc0500009f"
+                        "id": "51598b08d24251bc0500009f", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -10208,7 +10271,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/1623099"
                         ], 
                         "type": "yesno", 
-                        "id": "5159b990d24251bc050000a3"
+                        "id": "5159b990d24251bc050000a3", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -10463,7 +10527,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/2428004"
                         ], 
                         "type": "yesno", 
-                        "id": "515ac533d24251bc050000a9"
+                        "id": "515ac533d24251bc050000a9", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -10524,7 +10589,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/11966554"
                         ], 
                         "type": "yesno", 
-                        "id": "515d9e5c298dcd4e5100000e"
+                        "id": "515d9e5c298dcd4e5100000e", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -10724,7 +10790,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/16091476"
                         ], 
                         "type": "yesno", 
-                        "id": "511a1e12df1ebcce7d000009"
+                        "id": "511a1e12df1ebcce7d000009", 
+                        "exact_answer": "Yes"
                 }, 
                 {
                         "snippets": [
@@ -11063,7 +11130,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/20876285"
                         ], 
                         "type": "yesno", 
-                        "id": "511a4ec01159fa8212000004"
+                        "id": "511a4ec01159fa8212000004", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -12013,7 +12081,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/3656447"
                         ], 
                         "type": "yesno", 
-                        "id": "5133b15e5274a5fb0700000b"
+                        "id": "5133b15e5274a5fb0700000b", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -12116,7 +12185,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/1587867"
                         ], 
                         "type": "yesno", 
-                        "id": "513596225274a5fb0700000d"
+                        "id": "513596225274a5fb0700000d", 
+                        "exact_answer": "no"
                 }, 
                 {
                         "snippets": [
@@ -12200,7 +12270,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/15859353"
                         ], 
                         "type": "yesno", 
-                        "id": "5139ec51bee46bd34c000006"
+                        "id": "5139ec51bee46bd34c000006", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -12726,7 +12797,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/806773"
                         ], 
                         "type": "yesno", 
-                        "id": "513efe01bee46bd34c00000e"
+                        "id": "513efe01bee46bd34c00000e", 
+                        "exact_answer": "No"
                 }, 
                 {
                         "snippets": [
@@ -12798,7 +12870,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/18996189"
                         ], 
                         "type": "yesno", 
-                        "id": "513f3ab6bee46bd34c00000f"
+                        "id": "513f3ab6bee46bd34c00000f", 
+                        "exact_answer": "Yes"
                 }, 
                 {
                         "snippets": [
@@ -12846,7 +12919,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/18723672"
                         ], 
                         "type": "yesno", 
-                        "id": "513f4025bee46bd34c000011"
+                        "id": "513f4025bee46bd34c000011", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -12901,7 +12975,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/19096030"
                         ], 
                         "type": "yesno", 
-                        "id": "513f4249bee46bd34c000012"
+                        "id": "513f4249bee46bd34c000012", 
+                        "exact_answer": "Yes"
                 }, 
                 {
                         "snippets": [
@@ -12965,7 +13040,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/2530972"
                         ], 
                         "type": "yesno", 
-                        "id": "513f4892bee46bd34c000014"
+                        "id": "513f4892bee46bd34c000014", 
+                        "exact_answer": "Yes"
                 }, 
                 {
                         "snippets": [
@@ -13037,7 +13113,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/15174138"
                         ], 
                         "type": "yesno", 
-                        "id": "5144bc8fd24251bc0500000e"
+                        "id": "5144bc8fd24251bc0500000e", 
+                        "exact_answer": "No"
                 }, 
                 {
                         "snippets": [
@@ -13146,7 +13223,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/21157109"
                         ], 
                         "type": "yesno", 
-                        "id": "51485008d24251bc05000028"
+                        "id": "51485008d24251bc05000028", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -13192,7 +13270,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/16431849"
                         ], 
                         "type": "yesno", 
-                        "id": "5149b575d24251bc05000047"
+                        "id": "5149b575d24251bc05000047", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -13379,7 +13458,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/1992832"
                         ], 
                         "type": "yesno", 
-                        "id": "5149e23dd24251bc0500004b"
+                        "id": "5149e23dd24251bc0500004b", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -13600,7 +13680,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/20856809"
                         ], 
                         "type": "yesno", 
-                        "id": "5158a5b8d24251bc05000097"
+                        "id": "5158a5b8d24251bc05000097", 
+                        "exact_answer": "Yes"
                 }, 
                 {
                         "snippets": [
@@ -13661,7 +13742,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/9584105"
                         ], 
                         "type": "yesno", 
-                        "id": "5171833c8ed59a060a00000f"
+                        "id": "5171833c8ed59a060a00000f", 
+                        "exact_answer": "no"
                 }, 
                 {
                         "snippets": [
@@ -13800,7 +13882,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/15383674"
                         ], 
                         "type": "yesno", 
-                        "id": "517395b98ed59a060a00001a"
+                        "id": "517395b98ed59a060a00001a", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -13988,7 +14071,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/12764196"
                         ], 
                         "type": "yesno", 
-                        "id": "51763a278ed59a060a000030"
+                        "id": "51763a278ed59a060a000030", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
@@ -14164,7 +14248,8 @@
                                 "http://www.ncbi.nlm.nih.gov/pubmed/18798993"
                         ], 
                         "type": "yesno", 
-                        "id": "51be1750047fa84d1d000005"
+                        "id": "51be1750047fa84d1d000005", 
+                        "exact_answer": "yes"
                 }, 
                 {
                         "snippets": [
